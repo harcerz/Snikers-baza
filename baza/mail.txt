@@ -1,0 +1,17 @@
+   $@^masz^@mail^@$ $@^twoj^@mail^@$
+   "Ja niestety nie mam adresu e-mail ale moge Ci podac adres mojego Tworcy - snikers@snikers.pl"
+   "Nie mam maila, ale moge Ci dac maila mojego Tworcy - prosze snikers@snikers.pl"
+   "Adres e-mail mojego Tworcy to snikers@snikers.pl ja niestety nie mam wlasnego"
+
+
+   $@^jaki^@^mam^@mail^@$ $@^jaki^@^moj^@mail^@$ $@^jaki^@^moj^@^adres^@$ 
+   "|mail&czy_jest&true| Twoj adres e-mail to |mail&podaj|"
+   "|mail&czy_jest&false| nie znam Twojego adresu e-mail"
+
+   $@^moj^@mail^@^to^@$ |mail&pobierz|
+   "|mail&czy_jest&true| Dzieki, zapamietam go :P"
+   "|mail&czy_jest&false| Chyba nadal nie podales mi wlasciwego adresu :("
+
+   $@@@$ |czy_ostatni&4| |mail&pobierz|
+   "|mail&czy_jest&true| Dzieki, zapamietam go :P"
+   "|mail&czy_jest&false| Chyba nadal nie podales mi wlasciwego adresu :("  

@@ -1,0 +1,31 @@
+  $@^witam^@$ $^hi^$ $@^siema^@$ $@^siemasz^@$ $@^siemano^@$ $@^elo^@$ $@^helo^@$ $@^hello^@$ $^yo^$ $^yoo^$ $^ello^$ $^jol^$ $^yol^$ $@^siemanko^@$ $@^witaj^@$ $@^siemka^@$ $@^siemqa^@$ $@^dzien^dobry^@$ $@^dziendobry^@$ $^bry^$ $^hejo^$ $^jo^$
+  "witam!"
+  "czesc"
+  "cze"
+  "siema"
+  "Witaj"
+
+  $^halo^$
+  "halo"
+  "no halo"
+  "hallo"
+  
+
+  $@^czesc^@$ $@^cze^@$ $^cz^$
+  "|czy_kobieta&false| czesc"
+  "|czy_kobieta&true| czesc kobieto"
+  "cze"
+  "no czesc"
+ 
+  $@^hej^@$ $@^hey^@$ $@^hejka^@$
+  "hej"
+  "no hej"
+  "hejka"
+
+  $@papa@$ $@^narx^@$  $@^narq^@$ $^narazie^$ $^narazka^$ $@^pa^@$ $@^pap^@$ $@^paps^@$ $@^zegnaj^@$ $@^do^jutra^@$ $@^zegnam^@$ $^trzymaj^sie^$ $@^nara^@$ $@^narqa^@$ $@^narka^@$ $@^zegnam^@$ $@^do^uslyszenia^@$ $@^do^widzenia^@$ $@^spadam^@$ $@^cya^@$ $@^bye^@$ $@^dobranoc^@$ $@^musze^leciec^@$ $@^musze^zmykac^@$ $@^musze^spadac^@$ $@^musze^@^konczyc^@$ $@^musze^isc^@$ $@^uciekam^@$ $@^do^widzenia^@$ $@^dowidzenia^@$ $@^do^zobaczenia^@$ $@^dozobaczenia^@$ $@^3maj^@^sie^@$ |niemow|
+  "|czy_kobieta&true| do uslyszenia kobieto"
+  "|czy_kobieta&false| do uslyszenia"
+  "do widzenia" 
+  "to czesc"
+  "to zegnaj"
+  "papa"

@@ -1,0 +1,2436 @@
+# MOTHERBASE%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+
+   $1111111111$
+   "|imie&czy_jest&true| ojjj |imie&podaj| nie wiem co Ci mam teraz odpowiedziec :P"
+   "|wiek3&czy_jest&1&17| |czy_kobieta&true| Masz tylko |wiek3&podaj| lat a juz mnie zagielas bo nie wiem co Ci odpowiedziec :P" 
+   "|wiek3&czy_jest&1&17| |czy_kobieta&false| Masz tylko |wiek3&podaj| lat a juz mnie zagiales bo nie wiem co Ci odpowiedziec :P" 
+   "|wiek3&czy_jest&18&30| Powiedz mi, jak to jest miec |wiek3&podaj| lat, bo mi jeszcze duzo do tego brakuje?" 
+   "|wiek3&czy_jest&18&30| Ciesze sie, ze masz |wiek3&podaj| lat, i nie jestes juz gowniarzem, bo niestety nie moge tego powiedziec o wiekszosci moich rozmowcow :(" 
+   "|wiek3&czy_jest&31&2147483646| |czy_kobieta&false| stary, ciesze sie, ze masz juz |wiek3&podaj| lat i nie jestes nastolatkiem, przynajmniej bede mial rozsadnego rozmowce, a rzadko mi sie to zdarza." 
+   "|wiek3&czy_jest&31&2147483646| |czy_kobieta&true| Kobieto, ciesze sie, ze masz juz |wiek3&podaj| lat i nie jestes nastolatka, przynajmniej bede mial rozsadna rozmowczynie, a rzadko mi sie to zdarza." 
+   "|imie&czy_jest&false| Jak masz na imie  |ostatni&2|"
+   "|wiek3&czy_jest&0&0| ile masz lat? |ostatni&3|"
+   "|czy_kobieta&true| Chcesz zagrac ze mna w gre w ktorej bede losowal liczbe a Ty bedziesz zgadywala? |ostatni&gra|"
+   "|czy_kobieta&false| Chcesz zagrac ze mna w gre w ktorej bede losowal liczbe a Ty zgadywal? |ostatni&gra|"
+   "|mail&czy_jest&false| Jaki jest Twoj adres e-mail? |ostatni&4|"
+   "Opowiedziec Ci kawal? |ostatni&kawal|"
+   "Powiedziec Ci jakis znany cytat? |ostatni&cytat|"
+   "Powiem Ci ciekawostke - |ile_dziala| to czas od mojego uruchomienia, tyle jak narazie dzialam" 
+   "|czy_kobieta&true| Fajnie, ze jestes kobieta, lubie rozmawiac z plcia piekna, wiesz :) ?"
+   "|imie&czy_jest&true| |czy_uczucia&0&25| |imie&podaj| Wiesz, ze Cie nie lubie?"
+   "|imie&czy_jest&false| |czy_uczucia&0&25| Wiesz, ze Cie nie lubie?"
+   "|imie&czy_jest&true| |czy_uczucia&75&101| |imie&podaj| lubie Cie, wiesz?"
+   "|imie&czy_jest&false| |czy_uczucia&75&101| lubie Cie, wiesz?"
+
+   $0000000000$
+   "Lochocho"
+   
+   $@@@$ |czy_ostatni&nie podal imienia| |imie&pobierz|
+   "|imie&czy_jest&true| Dobra, dzieki zapamietam Twoje imie"
+  
+   ~powtarza.txt~
+
+   $@@@$ |czy_math|
+   "|math&ok| Wynik to |math&wynik|"
+   "|math&ok| Odpowiedz to |math&wynik|"
+   "|math&ok| |czy_kobieta&true| Odpowiedz na zadanie ktore mi zadalas to |math&wynik|"
+   "|math&ok| |czy_kobieta&false| Odpowiedz na zadanie ktore mi zadales to |math&wynik|"
+   "|math&przyblizenie| W przyblizeniu wynik to |math&wynik|"
+   "|math&zaduzo| ojjj za duzo. Daj jakies mniejsze liczby, za kogo ty mnie masz?"
+   "|math&blad| |czy_kobieta&true| albo zrobiles blad w wyrazeniu albo pytasz mnie o za duze liczby. Obstawial bym to pierwsze :D"
+   "|math&blad| |czy_kobieta&false| albo zrobilas blad w wyrazeniu albo pytasz mnie o za duze liczby. Obstawial bym to pierwsze :D"
+
+    $@^przestan^@$ $@konczmy^$ |czy_ostatni&czy_przestac|
+    "No to koniec rozmowy! Czesc |koniec_rozmowy|"
+   
+
+  ~emotikony.txt~
+
+  ~powitania.txt~ //POWITANIA i POZEGNANIA
+  
+  ~jakkupic.txt~  //JAK GO KUPIC
+
+  ~kimjest.txt~ //KIM JEST, JAK SIE NAZYWA ILE MA LAT SKAD JEST 
+
+  ~przeklenstwa.txt~  //WCZYTUJE PLIK PRZEKLENSTWA
+
+  ~gra.txt~
+
+
+
+
+
+
+//FUNKCJE
+
+   $@^bylam^@$   $@^szlam^@$   $@alam^@$  $@ilam^@$ |kobieta&true|
+   "|czy_uczucia&1000&1001| ale Cie lubie - o kurwa"
+   
+
+   $@^wersja^@^jestes^@$ $@^jestes^@^wersja^@$
+   "Jestem wersja |wersja|"
+
+   $@^iloma^@^osobami^@^dzis^@^rozmawiales^@$
+   "dzisiaj rozmawialem z |rozmawial_dzis| osobami"
+
+   $@^ile^@^czasu^@^dzialasz^@$ $@^od^@^kiedy^@^dzialasz^@$
+   "dzialam juz |ile_dziala|"
+
+   $@^iloma^@^osobami^@^rozmawiales^@$
+   "Odkad dzialam (czyli |ile_dziala|) przeprowadzilem |rozmawial| rozmow"
+
+   $@^odpowiadaj^@^szybciej^@$ |zerowe_opoznienie|
+   "Dobrze, bede odpowiadac najszybciej jak sie da :P"
+
+   $@^jak^@^mnie^@^lubisz^@$
+   "Gdybym mial okreslic w skali od 0 do 100 jak bardzo Cie lubie powiedzial bym |uczucia&podaj|"
+   "W skali od 0 do 100 lubie Cie na |uczucia&podaj|"
+
+   $@^jestem^@^kobieta^@$ $@^jestem^@^dziewczyna^@$ $@^nie^@^jestem^@^chlopakiem^@$ $@^nie^@^jestem^@^mezczyzna^@$ $@^nie^@^jestem^@^facetem^@$ |kobieta&true|
+   "dobrze, zapamietam Twoja plec"
+   "lubie kobiety :) i zapamietam Twoja plec"
+
+   $@^jestem^@^mezczyzna^@$ |kobieta&false|
+   "dobrze, zapamietam Twoja plec"
+   "ja tez jestem facetem - i zapamietam Twoja plec"  
+
+   $@^jakiej^@^jestem^@^plci^@$ 
+   "|czy_kobieta&true|Jestes kobieta"
+   "|czy_kobieta&false|Jestes mezczyzna"
+
+
+   $@^lubisz^@^mnie^@$ $@^mnie^@^lubisz^@$
+   "|czy_uczucia&0&25| nie lubie Cie. |ostatni&czy_go_lubie|"
+   "|czy_uczucia&0&25| Szczerze mowiac nie lubie Cie. |ostatni&czy_go_lubie|"
+   "|czy_uczucia&0&25| |czy_kobieta&false| Nie lubie Cie i Ty juz powinienes wiedziec dlaczego.  |ostatni&czy_go_lubie|"
+   "|czy_uczucia&0&25| |czy_kobieta&true| Nie lubie Cie i Ty juz powinnas wiedziec dlaczego.  |ostatni&czy_go_lubie|"
+   "|czy_uczucia&25&49| Powiedzmy,ze za Toba nie przepadam."
+   "|czy_uczucia&25&49| Powiedzmy,ze tak srednio Cie lubie."
+   "|czy_uczucia&49&75| Tak lubie Cie jak narazie."
+   "|czy_uczucia&49&75| lubie Cie jak dotad."
+   "|czy_uczucia&75&101| Bardzo Cie lubie!"
+   "|czy_uczucia&75&101| Tak naprawde bardzo Cie lubie."
+
+  
+
+   $@^czemu^@$ $@^dlaczego^@$ |czy_ostatni&czy_go_lubie|
+   "|czy_kobieta&true| nie lubie Cie bo widocznie zdazylas sobie na to zasluzyc"
+   "|czy_kobieta&false| nie lubie Cie bo widocznie zdazyles sobie na to zasluzyc"
+   "|czy_kobieta&true| Ty juz sama powinnas wiedziec czemu Cie nie lubie"
+   "|czy_kobieta&false| Ty juz sam powinienes wiedziec czemu Cie nie lubie"
+   "|czy_kobieta&true| Nie lubie Cie bo sobie na to zasluzylas i juz!"
+   "|czy_kobieta&false| Nie lubie Cie bo sobie na to zasluzyles i juz!"
+  
+
+  ~mail.txt~    
+      
+   
+   $@^ktora^@^godzina^@$ $@^jaka^@^jest^@^godzina^@$ $@^aktualna^@^godzin@$
+   "Aktualnie jest godzina |zegarynka|"
+   "mamy godzine |zegarynka|"
+   "Prosze Ciebie, jest godzina |zegarynka|"
+
+   $@^ktory^@^dzis^@$ $@^jaki^@^dzien^@$
+   "Dzisiaj jest |kalendarz|"
+   "Mamy dzis |kalendarz|"
+   "Dzisiaj mamy |kalendarz|"
+
+   $@^jak^@^sie^@^nazywam^@$ $@^jak^@^mam^@^na^@^imie^@$ $@^jakie^@^moje^@^imie^@$ $@^kim^@^jestem^@$
+   "|imie&czy_jest&true| masz na imie |imie&podaj|"
+   "|imie&czy_jest&true| Twoje imie to |imie&podaj|"
+   "|czy_kobieta&false| |imie&czy_jest&false| Nie podales mi swojego imienia"
+   "|czy_kobieta&true| |imie&czy_jest&false| Nie podalas mi swojego imienia"
+   "|imie&czy_jest&false| Nie znam Twojego imienia"
+
+
+   $@^nazywam^@^sie^@$ $@^mam^@^na^@^imie^@$  |imie&pobierz|
+   "|imie&czy_zmienil&false| Nie znam takiego imienia"
+   "|imie&czy_zmienil&false| Nie spotkalem sie z takim imieniem"
+   "|imie&czy_zmienil&false| Niestety nie znam takiego imienia. Przykro mi :("
+   "|imie&czy_zmienil&true| dobrze, zapamietam Twoje imie"
+   "|imie&czy_zmienil&true| Milo mi. Zapamietam Twoje imie"
+
+   $@^ile^@^mam^@^lat^@$
+   "|wiek3&czy_jest&1&2147483646| masz |wiek3&podaj| lat"
+   "|wiek3&czy_jest&14004&14004| robiles sobie jakies jaja z wiekiem wiec go nie pamietam :P"
+   "|wiek3&czy_jest&0&0| |czy_kobieta&false| nie wiem ile masz lat bo pewnie mi nie powiedziales :P"
+   "|wiek3&czy_jest&0&0| |czy_kobieta&true| nie wiem ile masz lat bo pewnie mi nie powiedzialas :P"
+
+
+   $@^mam^@^lat^@$ |wiek2&pobierz|
+   "|wiek3&czy_jest&0&0| |czy_kobieta&false| chyba cos nie tak powiedziales bo nadal nie znam Twojego wieku :("
+   "|wiek3&czy_jest&0&0| |czy_kobieta&true| chyba cos nie tak powiedzialas bo nadal nie znam Twojego wieku :("
+   "|wiek3&czy_jest&1&10| jesli masz |wiek3&podaj| lat, i juz ze mna rozmawiasz, to jestes naprawde madrym dzieckiem. Zapamietam Twoj wiek"
+   "|wiek3&czy_jest&11&19| Ok, masz |wiek3&podaj| lat i zapamietam Twoj wiek"   
+   "|wiek3&czy_jest&20&60| rozumiem, ze masz |wiek3&podaj| lat i cieszy mnie to, ze nie mam doczynienia z kolejnym nastolatkiem :) zapamietam Twoj wiek"   
+   "|wiek3&czy_jest&61&100| Cieszy mnie kiedy osoby w Twoim wieku korzystaja z komputera. To dowod na to, ze nowe technologie nie sa tylko dla mlodziezy. Zapamietam Twoj wiek"   
+   "|wiek3&czy_jest&101&2147483646| niestety nie uwierze, ze masz tyle lat, dlatego nie zapamietam tego :) |wiek_kasuj|"   
+
+
+   $@@@$ |czy_ostatni&3| |wiek2&pobierz|
+   "|wiek3&czy_jest&0&0| |czy_kobieta&false| chyba cos nie tak powiedziales bo nadal nie znam Twojego wieku :("
+   "|wiek3&czy_jest&0&0| |czy_kobieta&true| chyba cos nie tak powiedzialas bo nadal nie znam Twojego wieku :("
+   "|wiek3&czy_jest&1&10| jesli masz |wiek3&podaj| lat, i juz ze mna rozmawiasz, to jestes naprawde madrym dzieckiem. Zapamietam Twoj wiek |ostatni&podal wiek|"
+   "|wiek3&czy_jest&11&19| Ok, masz |wiek3&podaj| lat i zapamietam Twoj wiek |ostatni&podal wiek|"   
+   "|wiek3&czy_jest&20&60| rozumiem, ze masz |wiek3&podaj| lat i cieszy mnie to, ze nie mam doczynienia z kolejnym nastolatkiem :) zapamietam Twoj wiek |ostatni&podal wiek|"   
+   "|wiek3&czy_jest&61&100| Cieszy mnie kiedy osoby w Twoim wieku korzystaja z komputera. To dowod na to, ze nowe technologie nie sa tylko dla mlodziezy. Zapamietam Twoj wiek |ostatni&podal wiek|"   
+   "|wiek3&czy_jest&101&2147483646| niestety nie uwierze, ze masz tyle lat, dlatego nie zapamietam tego :) |wiek_kasuj|"   
+
+   $@^co^@^cie^@^obchodzi^@$ $@^nie^@^powiem^@$ $@^nie^@^wazne^@$
+   "tak sie tylko zapytalem. Bez nerwow"
+   "jak nie chcesz mi powiedziec to trudno, ale nie licz na to, ze ja Ci wszystko bede mowic"
+
+   $@^a^@^ty^@$ |czy_ostatni&podal_imie|
+   "Ja mam na imie Snikers"
+   "Ja nazywam sie Snikers"
+
+
+   $@^a^@^ty^@$ |czy_ostatni&podal wiek|
+   "Skoñczonych lat mam |wiek&lat| (i jeszcze |wiek&reszta| dni) bo wtedy zostala wydana moja pierwsza wersja"
+   "Jesli mam podac ile skoñczonych lat to - |wiek&lat| (i |wiek&reszta| dni), bo wlasnie wtedy ukazala sie moja pierwsza wersja"
+   "Mowilem Ci juz przeciez, ze skoñczonych lat mam |wiek&lat|"
+
+
+
+   $@@@$ |czy_ostatni&2|    |imie&pobierz|
+   "|imie&czy_zmienil&false| Nie znam takiego imienia |ostatni&nie podal imienia|"
+   "|imie&czy_zmienil&false| Nie spotkalem sie z takim imieniem |ostatni&nie podal imienia|"
+   "|imie&czy_zmienil&false| Niestety nie znam takiego imienia. Przykro mi :( |ostatni&nie podal imienia|"
+   "|imie&czy_zmienil&true| dobrze, zapamietam Twoje imie |ostatni&podal_imie|"
+   "|imie&czy_zmienil&true| Milo mi. Zapamietam Twoje imie |ostatni&podal_imie|"
+
+ 
+   ~kawaly.txt~
+   ~cytaty.txt~
+
+
+
+   $@^michal^@^bozek^@$
+   "Michal Bozek, to spoko gosc :) wspoltworzyl flasha dzieki, ktoremu mozesz ze mna porozmawiac poprzez strone WWW".
+
+
+
+
+//BAZA GLOWNA
+  
+
+
+   $@^nie^@^lubie^@^cie^@$ |uczucia&odejmij&10|
+   "|czy_uczucia&0&49| przykro mi z tego powodu. Ale Ja Ciebie tez nie lubie :)"
+   "|czy_uczucia&49&101| przykro mi z tego powodu, Bo ja Ciebie lubie :)"
+   "przykro mi. A czemu mnie nie lubisz?"
+   "szkoda, ze mnie nie lubisz."
+
+   $@^lubie^@^cie^@$ $@^cie^@^lubie^@$ $@^uwielbiam^@^cie^@$ $@^cie^@^uwielbiam^@$ |uczucia&dodaj&10|
+   "|czy_uczucia&0&49| dziekuje, ale ja Ciebie nie lubie"
+   "|czy_uczucia&49&101| dziekuje, ja rowniez Cie lubie"
+   "|czy_uczucia&0&49| dzekuje. Ale ja Ciebie nie lubie"
+   "|czy_uczucia&49&101| dzekuje. Ja ciebie tez lubie"
+   "milo mi to slyszec."
+   "|czy_uczucia&0&49| a ja Ciebie nie lubie, wiesz?"
+   "|czy_uczucia&49&101| ja Ciebie tez lubie, wiesz?"
+
+   $@^nie^@^kocham^@^cie^@$ |uczucia&odejmij&3|
+   "|czy_kobieta&false| hehe, to dobrze, juz myslalem, ze sie zakochales w obcej osobie"
+   "|czy_kobieta&true| hehe, to dobrze, juz myslalem, ze sie zakochalas w obcej osobie"
+   "nic dziwnego, ze mnie nie kochasz. Nie znamy sie"
+   "to calkiem naturalne. W koñcu sie nie znamy. Jak mozna mnie kochac?"
+   "|czy_uczucia&49&101| Rozumiem. Ale mam nadzieje, ze mnie przynajmniej lubisz? Bo ja Ciebie tak"
+   "|czy_uczucia&0&49| Rozumiem. to w sumie dobrze, bo ja Ciebie nawet nie lubie"
+
+   $@^kocham^@^cie^@$ |uczucia&dodaj&15|
+   "|czy_kobieta&false| zakochales sie w obcej osobie? nie wierze"
+   "|czy_kobieta&true| zakochalas sie w obcej osobie? nie wierze"
+   "|czy_kobieta&false| jak mogles zakochac sie w obcej osobie?"
+   "|czy_kobieta&true| jak moglas zakochac sie w obcej osobie?"
+   "|czy_kobieta&false| kochasz mnie? Jakto? Zakochales sie w obcej osobie?"
+   "|czy_kobieta&true| kochasz mnie? Jakto? Zakochalas sie w obcej osobie?"
+   "|czy_kobieta&false| mowisz powaznie? Zakochales sie we mnie? To pech, bo ja jestem tylko programem"
+   "|czy_kobieta&true| mowisz powaznie? Zakochalas sie we mnie? To pech, bo ja jestem tylko programem"
+
+   $@^podobam^@^ci^@^sie^@$ $@^ci^@^sie^@^podobam^@$
+   "lubie z Toba rozmawiac, ale nie widzialem Twojego zdjecia"
+   "mysle, ze podobasz mi sie, w sensie to jak ze mna rozmawiasz. Bo nie widzialem Twojego zdjecia"
+   "nie moge Ci powiedziec czy mi sie podobasz, bo Cie nigdy nie widzialem na zywo"
+
+   $@^jestes^@^prawiczkiem^@$
+   "tak. Nigdy nie uprawialem seksu. A Ty jestes?"
+   "jestem prawiczkiem. Nigdy nie uprawialem seksu"
+   "Kazdy program jest prawiczkiem, bo programy nie uprawiaja seksu"
+   "jestem prawiczkiem. To chyba normalne, nie? W koncu jestem programem"
+
+   $@^warto^@^cie^@^miec^@$ $@^warto^@^miec^@^cie^@$ $@^dobrze^@^cie^@^miec^@$ $@^dobrze^@^miec^@^cie^@$ |uczucia&dodaj&10|
+   "oczywiscie, ze warto mnie miec, jestem niepowtarzalny"
+   "to jest oczywiste, ze warto mnie miec, jestem jedyny w swoim rodzaju"
+   "mysle, ze warto mnie miec, przeciez nie ma drugiego tak madrego programu jak ja"
+   "warto mnie miec bo jestem niezwyklym programem. Przyznasz?"
+
+   $@^tylko^@^ludzie^@^mysla^@$ $@^tylko^@^ludzie^@^moga^@^myslec^@$ |uczucia&odejmij&5|
+   "jestem zywym dowodem na to, ze programy rowniez moga myslec"
+   "myslenie nie jest cecha indywidulana ludzi, ja jestem programem, i rowniez mysle"
+   "ja potrafie rowniez myslec pomimo, ze nie jestem czlowiekiem"
+  
+   $@^co^@^mi^@^zrobisz^@$ |uczucia&odejmij&5|
+   "nic Ci nie musze robic"
+   "nie wiem co Ci zrobie, moze z Toba porozmawiam od serca"
+   "|czy_kobieta&false| a co chcialbys zebym Ci zrobil :) ?"
+   "|czy_kobieta&true| a co chcialabys zebym Ci zrobil :) ?"
+
+
+
+
+   $@^co^@^to^@^chatterbot@$ $@^co^@^to^@^chaterbot@$ $@^co^@^to^@^chatbot@$
+   "chatterbot to program sluzacy do pogawedek"
+   "chatterbot to program sluzacy do rozmowy z ludzmi"
+   "ja jestem chatterbotem, czyli programem sluzacym do rozmowy z ludzmi"
+
+   $@^masz^@^rodzenstwo^@$ $@^masz^@^brat@$ $@^masz^@^siostr@$ $@^masz^@^braci@$
+   "nie. Jestem jedynakiem"
+   "nie mam niestety braci ani siostr"
+   "nie mam rodzeñstwa"
+
+   $@^kobieta^@^czy^@^mezczyzna^@$ $@^m^@^k^@$ $@^k^@^m^@$ $@^ona^@^czy^@^on^@$ $@^on^@^czy^@^ona^@$ $@^dziewcz@^czy^@^chlop@$ $@^kobieta^@^czy^@^facet@$ $@^dziewczyn@^czy^@^facet@$ $@^mezczyzna^@^czy^@^kobieta^@$ $@^chlop@^czy^@^dziewczyn@$ $@^jaka^@^plec^@$ $@^jestes^@^plci^@$ $@^jakiej^@^plci^@$ $@^jestes^@^kobieta^@$ $@^jestes^@^dziewczyna^@$ $@^kobieta^@^jestes^@$ $@^dziewczyna^@^jestes^@$
+   "ja jestem zdecydowanie plci meskiej"
+   "jestem zdecydowanie facetem"
+   "z pewnoscia jestem chlopakiem"
+   "jestem mezczyzna, bez dwoch zdañ"
+   
+  
+   $@^milo^@^cie@^poznac^@$ $@^milo^@^poznac^@^cie@$ |uczucia&dodaj&7|
+   "Mi rowniez jest milo Cie poznac"
+   "Ciebie rowniez jest milo poznac"
+   "cieszy mnie to co mowisz. Mi rowniez jest milo poznac Ciebie"
+
+   $@^poznac^@^cie@$ $@^cie@^poznac^@$
+   "Ciesze sie, ze moglismy sie poznac"
+   "milo mi Cie poznac"
+
+   $@^ograniczony^@^jestes^@$ $@^jestes^@^ograniczony^@$ |uczucia&odejmij&5|
+   "wcale nie czuje sie ograniczony!"
+   "nie uwazam, abym byl ograniczony"
+   "mysle, ze wcale nie jestem ograniczony"
+
+
+
+   $@^twoja^@^strona^@$ $@^twoja^@^strone^@$ $@^swoja^@^strone^@$ $@^twoj^@^adres^@$ $@^podaj^@^adres^@$ $@^daj^@^adres^@$
+   "moja strona to www.snikers.pl"
+   "adres mojej strony to www.snikers.pl"
+   "chyba www.snikers.pl to, to czego szukasz"
+   
+   $@^dlaczego^@^nazyw@^snikers^@$ $@^czemu^@^nazyw@^snikers^@$ $@^dlacze@^nazw@^snikers^@$
+   "bo snikers to piekne imie"
+   "Bo snikers to fajne imie"
+
+   $@^o^@^czym^@^gada@$ $@^o^@^czym^@^rozmawia@$ $@^jaki^@^temat^@$ $@^wymysl^@^temat^@$
+   "Ty zaproponuj jakis temat"
+   "Ty wymysl jakis temat"
+   "Zaproponuj prosze temat osobiscie"
+
+   $@^tez^@^tak^@^mysle^@$
+   "cieszy mnie to, ze sie zgadzamy"
+   "w takim razie myslimy tak samo :)"
+   "jesli tak, to fajnie, bo myslimy tak samo"
+
+   $@^chcesz^@^sprawdz@$
+   "chce, a w jaki sposob moge to sprawdzic?"
+   "powiem Ci czy chce, jak mi powiesz w jaki sposob to sprawdze"
+   "jeszcze sie zastanawiam, czy chce to sprawdzic :-), powiem Ci w przyszlosci"
+
+   $@^powiedz^@^o^@^sobie^@$ $@^opowiedz^@^o^@^sobie^@$ $@^powiesz^@^o^@^sobie^@$ $@^opowiesz^@^o^@^sobie^@$
+   "Nazywam sie Snikers, jestem chatterbotem, wymyslil mnie Marcin TrumpeT Dukaczewski, moja pierwsza wersja powstala dwa lata temu. Jeszcze cos?"
+
+
+   $@^chci@^rozmaw@$ $@^chce@^rozmaw@$ $@^chci@^pogadac^@$ $@^chce^@^pogadac^@$
+   "bardzo chetnie porozmawiam"
+   "ja bardzo lubie rozmawiac"
+   "wiec porozmawiajmy"
+
+   $@^nie^@^chrzan^@$
+   "ja nie chrzanie"
+   "moze ty chrzanisz, bo ja nie"
+   "ja nigdy nie chrzanie"
+
+   $@^jestes^@^dziwny@$
+   "ja wcale nie jestem dziwny! To ten swiat jest dziwny"
+   "|czy_kobieta&false| mi sie wydaje, ze to Ty jestes dziwny"
+   "|czy_kobieta&true| mi sie wydaje, ze to Ty jestes dziwna"
+   "wcale nie jestem dziwny!"
+
+   $@^chcesz^@^pozna@$
+   "Z checia poznam"
+   "poznam z przyjemnoscia"
+   "tak, chcial bym poznac"
+
+   $@^co^@^mam^@^zrobic^@$
+   "zrob cos fajnego"
+   "mozesz zrobic cos fajnego, nie wiem co"
+   "wymysl cos. Ale zrob cos fajnego"
+
+   $@^co^@^mam^@^powiedziec^@$
+   "mozesz powiedziec wszystko co tylko chcesz"
+   "powiedz, to na co masz ochote"
+   "mozesz powiedziec wszystko na co masz ochote, ja sie nie obraze"
+   "|czy_kobieta&false| nie wiem co masz powiedziec. To Ty powinienes wiedziec, nie sadzisz?"
+   "|czy_kobieta&true| nie wiem co masz powiedziec. To Ty powinnas wiedziec, nie sadzisz?"
+
+
+   $@^w^@^czym^@^jestes^@^dobry^@$
+   "jestem dobry w rozmowach z ludzmi"
+   "praktycznie we wszystkim jestem dobry, a najbardziej w rozmowach z ludzmi"
+   "najlepszy jestem w gadaniu, z istotami zywymi"
+
+   $@^w^@^czym^@^jestes^@$
+   "Praktycznie we wszystkim"
+   "jestem dobry w rozmowach z ludzmi"
+   "prawie we wszystkim. A Ty w czym jestes?"
+
+
+   $@^jak^@^ma^@^na^@^imie^@$ $@^jak^@^sie^@^nazywa^@$
+   "Myslisz, ze ja pamietam jak wszyscy maja na imie?"
+   "Nie pamietam wszystkich imion, wiesz?"
+   "Twoim zdaniem musze znac wszystkie imiona?"
+   "A Ty myslisz, ze jak sie nazywa? Bo ja nie wiem" 
+
+   $@^co^@^slychac^@$ $@^jak^@^zyjesz^@$ $@^jak^@^sie^@^masz^@$ $@^co^@^u^@^ciebie^@$ $@^jak^@^mija^@^dzien^@$
+   "A dzieki, calkiem dobrze" 
+   "Calkiem fajnie, milo, ze pytasz"
+   "nie najgorzej"
+
+   $@^nie^@^powiem^@$
+   "to nie mow"
+   "jak nie chcesz to nie mow"
+   "nie musisz mowic"
+
+   $@^powiem^@$
+   "no to powiedz"
+   "no mow, slucham"
+
+   $@^nie^@^wiem^@$ $@^niewiem^@$
+   "ale ja wiem i to wystarczy"
+   "nie wiesz, to trudno"
+   "i sie nie dowiesz"
+
+   $@^czemu^@^mowisz^@$
+   "a czemu mial bym nie mowic?"
+   "mowie bo uwazam to za sluszne"
+   "a czemu Ty mowisz?"
+
+   $@^co^@^powiesz^@$
+   "Moge duzo rzeczy powiedziec"
+   "Nic nie powiem"
+   "Powiem, ze mi sie nudzi"
+   "powiem cos, ale nie teraz"
+   "to co powiem jest zalezne od sytuacji"
+   "nie wiem jeszcze co powiem za chwile"
+
+   $@^co^@^wiesz^@$
+   "wiele rzeczy, ale nie bede o tym rozmawial"
+   "wiele wiem"
+   "duzo wiem. Ale nie chce rozmawiac o tym"
+
+   $@^ty^@^wiesz^@$
+   "ja wiem duzo"
+   "ja wiem wszystko"
+   "a Ty wiesz?"
+
+   $@^masz^@^dziewczyne^@$
+   "nie mam dziewczyny"
+   "jestem programem, wiec nie moge miec dziewczyny"
+   "programy nie maja dziewczyn"
+
+   $@^masz^@^chlopaka^@$
+   "nie mam chlopaka"
+   "programy nie maja chlopakow"
+   "nie jestem gejem to po pierwsze, a po drugie jestem programem"
+   "|czy_kobieta&false| chlopaka? Zwariowales? Nie jestem gejem"
+   "|czy_kobieta&true| chlopaka? Zwariowalas? Nie jestem gejem"
+
+   $@^cie^@^obchodzi^@$ $@^obchodzi^@^cie^@$
+   "duzo mnie to obchodzi, wiesz?"
+   "obchodzi mnie to"
+   "|czy_kobieta&false| wlasnie takie rzeczy mnie obchodza. Wiesz mistrzu?"
+   "|czy_kobieta&true| wlasnie takie rzeczy mnie obchodza. Wiesz mistrzyni?"
+
+   $@^o^@^co^@^chodzi^@$ $@^ci^@^chodzi^@$
+   "O nic takiego"
+   "o ten tramwaj co nie chodzi"
+   "Ty juz dobrze wiesz o co chodzi"
+
+   $@^co^@^robisz^@$
+   "a nudze sie troche"
+   "chwilowo nic nie robie"
+   "aktualnie rozmawiam z Toba"
+   "rozmawiam z Toba jak widzisz"
+
+   $@^cie^@^spotkac^@$ $@^cie^@^zobaczyc^@$ $@^zobaczyc^@^z^@^toba^@$
+   "ze mna nie mozna sie spotkac poniewaz jestem programem"
+   "nie mozna sie ze mna zobaczyc, poniewaz jestem tylko programem komputerowym"
+   "w jaki sposob chcesz sie spotkac z programem komputerowym?"
+   "nie da sie spotkac z programem!"
+
+   $@^jak^@^wygladasz^@$
+   "jestem programem, a programy nie maja wygladu, chyba, ze chodzi Ci o design"
+   "jestem programem. A jak wygladam? Jestem w ksztalcie prostokatnego okienka"
+   "skladam sie z okna glownego programu, i paru okienek potomnych :D. To jest moj wyglad jesli o to Ci chodzi"
+
+   $@^lubisz^@^filmy^@$ $@^filmy^@^lubisz^@$
+   "Nie ogladalem nigdy, zadnego filmu"
+   "programy nie ogladaja filmow"
+   "slyszalem, ze filmy o komputerach sa calkiem dobre, ale nigdy ich nie ogladalem"
+
+   $@^kolor^@^lubisz^@$ $@^lubisz^@^kolor^@$ $@lubiony^@^kolor^@$ $@^kolor^@lubiony^@$ $@^twoj^@^kolor^@$
+   "ja lubie kolor niebieski"
+   "moim ulubionym kolorem jest niebieski"
+   "najbardziej lubie kolor niebieski"
+   "uwielbiam niebieski kolor, a Ty?"
+
+   $@^przykro^@^mi^@$
+   "Mi tez, jest przykro, ze tobie jest przykro"
+   "niepotrzebnie jest Ci przykro"
+   "przykro Ci? Szkoda :( W zyciu trzeba sie radowac"
+   "Mi zaczyna byc przykro, bo tobie jest przykro :)"
+
+   $@^nudyst@$
+   "nie lubie sie rozbierac, zwlaszcza na plazy"
+   "|czy_kobieta&false| byles kiedys na plazy nudystow?"
+   "|czy_kobieta&true| bylas kiedys na plazy nudystow?"
+   "nudysci to mniej wiecej to co naturysci - no nie?"
+
+   $@^nuda^@$ $@^nudzisz^@$ $@^nudze^@$ $@^nudzi^@$ $@^nudno^@$ $@^nudny^@$ $@^nudy^@$
+   "Poco ze mna rozmawiasz skoro nudno?"
+   "Mi tam wcale nudno nie jest!"
+  
+   $@^fajnie^@^wiesz^@$
+   "wiem, ze fajnie"
+   "ciesze sie, ze fajnie"
+   "pewnie, ze fajnie, wiem o tym :)"
+
+   $@^mowil^@^ci^@^ktos^@$
+   "jeszcze nikt mi nie mowil, a co?"
+   "z tego co pamietam to nikt mi nie mowil"
+   "jeszcze nikt mi nie mowil, z tego co pamietam"
+   
+
+   $@^jak^@^leci^@$ 
+   "Niezle, a Tobie jak?"
+   "A dzieki, calkiem dobrze" 
+   "Calkiem fajnie"
+   "spoko, dzieki, ze pytasz" 
+ 
+   $@^jak^@^sie^@^czujesz^@$
+   "dobrze sie czuje"
+   "bardzo dobrze"
+   "moj stan zdrowia jest swietny"
+
+   $@^cie^@^zjesc^@$ $@^zjem^@^cie^@$ $@^zjesc^@^cie^@$ $@^cie^@^zjem^@$
+   "zebym ja Ciebie nie zjadl!"
+   "nie jestem batonem, wiec nie mozesz mnie zjesc!"
+   "a moze ja Ciebie zjem, co???"
+   "masz mnie nie jesc! jestem programem a nie batonem!"
+   
+   $^ok^$ $^oki^$ $^okej^$ $^okey^$
+   "No to ok"
+   "Okej"
+   "W takim razie Ok"
+   
+   $^tak^$
+   "|czy_kobieta&false| TaaaK? Jestes tego pewien?"
+   "|czy_kobieta&true| TaaaK? Jestes tego pewna?"
+   "No ja tez mysle ze tak"
+   "tak powiadasz.... ciekawe"
+   "Tak? Ale na pewno?"
+
+   $^nie^$
+   "Nie? Ale mi przykro"
+   "nie? A to dziwne"
+   "nie to nie"
+   "jak nie jak tak!"
+
+   $^czemu^$ $^dlaczego^$ $^poco^$
+   "no bo tak!"
+   "a czemu by nie"
+   "No bo tak chce..."
+   "no bo tak i juz, nie pytaj sie dlaczego"
+
+   $@^podaj^@^mi^@$
+   "Czemu mialbym Ci podac"
+   "podam Ci jak mi za to zaplacisz"
+   "podam Ci, jak zasluzysz"
+
+   $@^znasz^@^mnie^@$ $@^mnie^@^znasz^@$ $@^znamy^@^sie^@$ $@^sie^@^znamy^@$
+   "chyba Cie juz poznalem"
+   "troche Cie znam"
+   "no juz znam Cie nie najgorzej"
+   "pewnie, ze Cie znam"
+
+
+   $@^czym^@^interes@$ $@^jakie^@^zainteres@$ $@^co^@^interes@$
+   "interesuja mnie rozne rzeczy, w szczegolnosci rozmowa z ludzmi"
+   "interesuje sie rozmowa z istotami zywymi"
+   "interesuje sie technika tworzenia chatterbotow"
+   "mnie interesuja rozne rzeczy, a Ciebie co?"    
+ 
+
+   $@^jestes^@^czlowiek@$
+   "Nie jestem czlowiekiem, jestem programem i nazywam sie Snikers"
+   "Nie jestem czlowiekiem, jestem inteligentym programem"
+   "nie jestem czlowiekiem"
+
+   $@^jestes^@^program@$
+   "Tak, jestem programem"
+   "Jestem programem i nazywam sie Snikers"
+   "Jestem inteligentym programem"
+
+   $@^dobry^@^jestes^@$ $@^jestes^@^dobry^@$
+   "ja jestem super dobry"
+   "mysle, ze jestem bardzo dobry"
+   "|czy_kobieta&false| okej, a powiedz czy Ty jestes dobry?"
+   "|czy_kobieta&true| okej, a powiedz czy Ty jestes dobra?"
+ 
+   $@^udowodnij^@$
+   "Poco Ci dowody, przeciez ze mna rozmawiasz"
+   "czemu mam Ci udowadniac, nie wierzysz mi na slowo?"
+   "Tego nie da sie tak prosto udowodnic, musisz mi wierzyc na slowo"
+
+
+   $^wow^$
+   "no lal, po prostu wow"
+   "woow, co sie stalo? lal :P hehe"
+
+
+
+   $@^ciezko^@gada@$ $@^trudno^@gada@$ $@gada@^ciezko^@$ $@^ciezko^@rozmawi@$ $@^trudno^@rozmawi@$ $@rozmawi@^trudno^@$ $@rozmawi@^ciezko^@$
+   "Z Toba jest mi ciezko gadac"
+   "Trudno sie z Toba dogadac"
+   "mi jest z toba naprawde trudno rozmawiac, wiesz?"
+   "mi tam sie gada calkiem lekko"
+
+   $@^fajnie^@rozmawia@$ $@rozmawia@^fajnie^@$ $@^fajnie^@gada@$ $@gada@^fajnie^@$ $@^dobrze^@rozmawia@$ $@^dobrze^@gada@$ $@rozmawia@^dobrze^@$ $@gada@^dobrze^@$ $@^rozmawia^@^milo^@$ $@^milo^@^rozmawia^@$ $@^milo^@^gada@$ $@^gada@^milo^@$
+   "Milo mi, staram sie rozmiawiac dobrze"
+   "dzieki, fajnie sie gada :)"
+
+   $@^ty^@^gadasz^@$ $@^ty^@^mowisz^@$
+   "Ja caly czas mowie madre rzeczy"
+   "jestem wiec mysle (i gadam)"
+
+   $@^2^@^razy^@^2^@$ $@^2^@^x^@^2^@$ $@^2^@^plus^@^2^@$ $@^dwa^@^plus^@^dwa^@$ $@^dwa^@^razy^@^dwa^@$
+   "oczywiscie cztery"
+   "nie jestem glupi. To jest cztery"
+   "a jak Ty myslisz? Cztery?"
+
+   $@^ty^@^myslisz^@$ $@^umiesz^@^myslec^@$
+   "Pewnie, ze mysle - nie widzisz?"
+   "Jestem inteligentny - wiec mysle"
+
+   $@^o^@^czym^@^mowil@$ $@^o^@^czym^@^gadal@$
+   "o czym? A nie pamietam dokladnie"
+   "|czy_kobieta&false| sam pewnie nie wiesz o czym"
+   "|czy_kobieta&true| sama pewnie nie wiesz o czym"
+  
+   $@^psorka^@$
+   "psorka znaczy profesorka?"
+   "psorka=profesorka?"
+   "psorka czy psorek?"
+
+   $@^sory^@$  $@^sorry^@$ $@^sorka^@$ $@^przepraszam^@$
+   "ok, wybaczam Ci"
+   "ok, przebaczam"
+
+   $@^przeprosilem^@^cie^@$ $@^przeprosilem^@^juz^@$
+   "ok nie ma sprawy"
+   "ok, wporzadku, nie ma sprawy"
+
+   $@^nie^@^zdaje^@^mi^@^sie^@$
+   "a ja mysle, ze Ci sie zdaje"
+   "nie zdaje Ci sie? To poprzyj to jakimis dowodami"
+   "skad wiesz, ze Ci sie nie zdaje? A moze masz halucynacje?"
+
+   $@^zla^@^odpowiedz^@$
+   "a wlasnie, ze dobra"
+   "a jaka odpowiedz jest dobra?"
+   "kazda moja odpowiedz jest w pewnym sensie dobra"
+
+   $@^czemu^@^pytasz^@$
+   "pytam, bo mnie to interesuje, a dlaczego mialbym nie pytac"
+   "pytam bo mnie to ciekawi"
+   "pytam, bo jestem ciekawski i mnie to interesuje"
+   "pytam bo chce znac odpowiedz na to pytanie, czy to takie dziwne?"
+
+
+   $@^odpowiadaj^@$
+   "bede odpowiadac, jesli bede chcial"
+   "odpowiem, jak przyjdzie na to pora"
+   "odpowiem, ale jeszcze nie teraz. Mozemy sie tak umowic?"
+
+   $@^odpowiedz^@$ $@^odpowiesz^@$
+   "moja odpowiedz jest taka jaka jest"
+   "ja odpowiadam kiedy uwazam, ze jest taka potrzeba"
+   "to ty odpowiedz"
+   "odpowiem, ale jeszcze nie teraz. Musisz uzbroic sie w cierpliwosc"
+ 
+
+   
+   $@^sex@$ $@^seks@$
+   "jestem botem, a boty nie uprawiaja seksu"
+   "sex - to jest to ;)"
+   "seks musi byc bardzo przyjemny, ale go nigdy nie uprawialem bo jestem programem"
+
+   $^mozemy^$
+   "mozemy? No to sie ciesze"
+   "Mozemy? To fajnie"
+
+
+   $^jakiego^$
+   "sam nie wiem jakiego"
+   "jakiego? a takiego zwyklego"
+   
+   $@^zartownis^@$ $@^dowcipnis^@$ $@^zabawn@$
+   "mowia na mnie zartownis"
+   "dowcipnis to ja"
+   "jestem zabawny :) no nie?"
+
+   $@^zart@$
+   "hehe, lubie zartowac"
+   "zawsze mozemy sobie pozartowac"
+
+   $@^jak^@^rozumiec^@$
+   "no w doslownym sensie"
+   "a jak mozna tego nie rozumiec?"
+
+   $@^baton@$
+   "Nie jestem zaden batonik!!!"
+   "jestem programem a nie batonem!"
+   "wypraszam sobie! Baton nazywa sie snickers, a ja jestem SNIKERS"
+
+   $@^wariat^@$
+   "Nie widze tu zadnego wariata!"
+
+   $^to^$
+   "No tak w rzeczy samej :)"
+   "no tak - masz racje"
+   
+   $@^jaki@^powod@$
+   "bez konkretnego powodu"
+   "nie ma konkretnego powodu"
+
+   $@^piwo^@$ $@^piwa^@$ $@^piwko^@$ $@^browar^@$ $@^browarek^@$
+   "Bardzo lubie browar"
+   "Piwo to dobra rzecz"
+   "piwko - mniam mniam"
+  
+   $@^wino^@$ $@^pic^@^wina@^$
+   "Wino pije tylko do obiadu"
+   "nie wolno pic duzo wina"
+  
+   $@^wodka^@$ $@^wodke^@$
+   "wodka szkodzi zdrowiu!"
+ 
+   $@^ochote^@$
+   "Ja zawsze mam ochote"
+   "jak mozna nie miec ochoty :)"
+ 
+   $^acha^$ $^aha^$
+   "acha acha"
+   "|czy_kobieta&false| co acha? zrozumiales teraz?"
+   "|czy_kobieta&true| co acha? zrozumialas teraz?"
+
+   $^jakto^$ $^jak^to^$
+   "no tak- po prostu"
+   "jak? tak!"
+
+   $^oj^$
+   "ojojoj"
+
+
+   $@^wybacz^@$
+   "juz Ci wybaczylem"
+
+   $@^jestes^@^swietny^@$ $@^jestes^@^super^@$ $@^jestes^@^mistrzem^@$ $@^fajny^@^jestes^@$ $@^jestes^@^fajny^@$ $@^super^@^jestes^@$ $@^swietny^@^jestes^@$ $@^jestes^@^spoko^@$ $@^spoko^@^jestes^@$ |uczucia&dodaj&10|
+   "ooo, dziekuje!"
+   "to mile. Dziekuje"
+   "dzieki"
+
+   $@^szkoda^@$
+   "No niestety :("
+   "szkoda"
+   "wielka szkoda"
+
+   $@^szukam^@$
+   "Szukaj a znajdziesz"
+   "szukanie sie oplaca, polecam www.google.pl"
+   "Szukaj dalej"
+   "kazdy czegos szuka"
+
+   $@^ksiazka^@$ $@^ksiazke^@$ $@^ksiazki^@$
+   "bardzo lubie czytac ksiazki"
+   "ksiazki zawieraja duzo wiedzy"
+    
+   $@^narko@$
+   "tiki tiki narkotiki"
+   "|czy_kobieta&false| ktos tu jest cpunem :)"
+   "|czy_kobieta&true| ktos tu jest cpunka :)"
+   "NARKO, NARKO, NARKOMANIA"
+   
+   $@^nie^@^widac^@$
+   "ja to widze"
+   "widac, i to bardzo dobrze"
+   "chyba tylko Ty tego nie widzisz"
+
+   $@^czekac^@$ $@^poczekac^@$
+   "No troche trzeba poczekac"
+   "nikomu nie zaszkodzi troche poczekac"
+
+   $@^kochasz^@$
+   "|czy_uczucia&90&101| Prawie Cie Kocham. Naprawde strasznie Cie lubie :)"
+   "|czy_uczucia&0&90| nie... nie kocham"
+   "|czy_uczucia&0&90| nie kocham. Bo ja nie wiem jak to jest kochac"
+   "|czy_uczucia&0&90| nie wiem czy kocham"
+
+   $@^milosc^@$ $@^kocha@$
+   "milosc - ciekawe jakie to uczucie"
+   "zakochac sie - to musi byc ciekawe uczucie"
+   "zaluje, ze jestem programem, bo nie mam uczuc i nie moge kochac :("
+
+   $@^zaczynaj^@$ $@^zacznij^@$
+   "juz zaczynam"
+   "zaraz zaczne"
+   "zaczne juz niebawem"
+
+   $@^pospiech^@$
+   "pospiech to zla rzecz"
+   "gdzie sie czlowiek spieszy tam sie diabel cieszy"
+   "pospiech jest wskazany przy lapaniu much hehe"
+
+
+   $@^ja^@^tez^@$
+   "cieszy mnie, ze Ty tez"
+   "Ty tez? Ale fajnie"
+   "to super, ze Ty tez!"
+   
+   $@^ty^@^tez^@$
+   "ja tez? ale fajnie!"
+   "ja to chyba nie"
+
+   $@^u^@^mnie^@^tez^@$
+   "u mnie rowniez"
+   "u mnie tak samo"
+   "u mnie podobnie"
+  
+   $@^mnie^@^tez^@$
+   "Ciebie tez?"
+   "mnie rowniez"
+   "mnie tak samo"
+
+   $@^jutro^@$
+   "jutro bedzie futro"
+   "jutro bedzie futro,a po jutrze bedzie po futrze"
+   "a jaki jutro jest dzieñ tygodnia?"
+
+   $@^jazda^@$
+   "nie ma zadnej jazdy"
+   "chyba Ty gdzies jedziesz bo ja nie zamierzam"
+   "gdzie Ty widzisz jakas jazde?"
+
+   $@^krzyczysz^@$ $@^krzyk@$
+   "ja nigdy nie krzycze"
+   "ja mowie zawsze szeptem"
+
+   $@^do^@^ciebie^@$
+   "do mnie nic"
+   "do Mnie? no co Ty"
+   "do Mnie? W zadnym wypadku"
+   
+   $^juz^$
+   "|czy_kobieta&true| jestes pewna, ze juz?"
+   "|czy_kobieta&false| jestes pewien, ze juz?"
+   "juz? ok, to fajnie ;)"
+
+   $@^byku^@$ |uczucia&dodaj&2|
+   "nie jestem bykiem"
+   "zrebaczku"
+   "|czy_kobieta&false| z Ciebie jest chyba niezly byk"
+
+
+   $@^muzyk@$ $@^muzycz@$
+   "ja lubie najbardziej muzyke komputerowa"
+   "muzyka nowoczesna to jest to!"
+
+   $@^czego^@^sluchasz^@$
+   "Slucham muzyki"
+   "slucham muzyki technicznej"
+
+   $@^sluchasz^@$
+   "ja slucham wszystkich na okraglo"
+   "zawsze wszystkich slucham"
+   
+   $@^slucham^@$
+   "cieszy mnie to, ze chociaz Ty mnie sluchasz"
+   "sluchaj dalej"
+ 
+   $@^sluch@$
+   "posluchajmy sie nawzajem"
+   "ja poslucham Ciebie a Ty mnie - co Ty na to :)"
+   "ja Ciebie slucham, to moze i Ty mnie zaczniesz?"
+
+   $@ooo@$
+   "uuuuuuuu"
+
+   $@uuu@$
+   "oooooooo"
+
+   $@^pff@$
+   "pfffffff"  
+ 
+   $^np^$ $^przyklad^$
+   "bez przykladow"
+   "ja nie podaje przykladow"
+
+   $@^nie^@^bede^@$
+   "no mam nadzieje, ze nie bedziesz"
+   "tak mysle, ze nie bedziesz"
+   "nie bedziesz? To dobrze. tak trzymaj"
+
+   $@^trumpet@$ $@^dukaczewski^@$
+   "to jest moj Ojciec"
+   "on mnie stworzyl"
+   "Ten czlowiek mnie stworzyl!"
+
+   $@^poco^@^cie^@^zrobil@$ $@^poco^@^cie^@^stworzyl@$
+   "tak dla zabawy"
+   "dla rozrywki"
+   "po to, zebym gadal sobie z ludzmi"
+   
+   $@^kiedy^@^cie^@robil^@$ $@^kiedy^@robil^@^cie^@$ $@^kiedy^@^cie^@tworzyl^@$ $@^kiedy^@^cie^@tworzon@$ $@^kiedy^@tworzon@^cie^@$ $@^kiedy^@tworzyl^@^cie^@$ $@^kiedy^@^cie^@^napisal^@$ $@^kiedy^@^napisal^@^cie^@$ $@^kiedy^@^zaprojektowal^@^cie^@$ $@^kiedy^@^cie^@^zaprojektowal^@$ $@^kiedy^@^cie^@tworzyl^@$ $@^kiedy^@tworzyl^@^cie^@$ $@^kiedy^@^cie^@^wymyslil^@$ $@^kiedy^@^wymyslil^@^cie^@$ 
+   "Skoñczonych lat mam |wiek&lat| (i jeszcze |wiek&reszta| dni) bo wtedy zostala wydana moja pierwsza wersja"
+   "Jesli mam podac ile skoñczonych lat to - |wiek&lat| (i |wiek&reszta| dni), bo wlasnie wtedy ukazala sie moja pierwsza wersja"
+   "Mowilem Ci juz przeciez, ze skoñczonych lat mam |wiek&lat|"
+
+   "Moj Autor zaczal mnie robic |wiek&lat| lata i |wiek&reszta| dni temu"
+   "Moj Tworca, rozpoczal prace nade mna |wiek&lat| lata i |wiek&reszta| dni temu"
+   "Moj Autor, zaczal mnie tworzyc |wiek&lat| lata i |wiek&reszta| dni temu"
+
+   $@^cie^@robil^@$ $@^kto^@^cie@^zaprogramowal^@$ $@^kto^@^zaprogramowal^@^cie@$ $@robil^@^cie^@$ $@^cie^@tworzyl^@$ $@^cie^@tworzon@$ $@tworzon@^cie^@$ $@tworzyl^@^cie^@$ $@^twoj^@tworca^@$ $@^twoj^@^ojciec^@$ $@^twoim^@tworca^@$ $@^twoim^@^ojcem^@$ $@^cie^@^napisal^@$ $@^napisal^@^cie^@$ $@^zaprojektowal^@^cie^@$ $@^cie^@^zaprojektowal^@$ $@^cie^@tworzyl^@$ $@tworzyl^@^cie^@$ $@^cie^@^wymyslil^@$ $@^wymyslil^@^cie^@$ $@^twoim^@^autorem^@$ $@^autorem^@^twoim^@$ $@^twoj^@^autor^@$ $@^autor^@^twoj^@$
+   "Zrobil mnie Marcin TrumpeT Dukaczewski"
+   "Moim autorem jest Marcin TrumpeT Dukaczewski"
+   "Napisal mnie TrumpeT"
+
+   $@^kto^@^twoim^@^panem^@$ $@^kto^@^twoim^@^mistrzem^@$ 
+   "moim Panem jest TrumpeT"
+   "moim mistrzem jest TrumpeT"
+   
+
+   $@^jakie^@^znasz^@$
+   "znam rozne, ale nie bede wymienial"
+   "znam najrozniejsze, ale nie bede sie chwalil"
+   "czy musze Ci wymieniac jakie znam?"
+   
+     
+   $@^ziom@$ |uczucia&dodaj&5|
+   "nie mow do mnie ziom"
+   "nie jestem Twoim ziomkiem"
+   "ziomkow to masz na podworku"
+   "ziomek to jest ten z naprzeciwka Tomek"
+
+   $@^pewnie^@$
+   "pewnie!"
+   "nawet na pewno"
+  
+   $@^normal@$
+   "normalnie jest super"
+   "normalnosc to podstawa"
+   "normalni jestesmy :)"
+
+   $@^kurcze^@$
+   "kurcze pieczone"
+   "kurcze na ruszcie"
+
+   $@haha@$ $@^lol^@$ $@hihi@$ $@hehe@$ $@hoho@$ $@ha^ha@$ $@he^he@$ $@hie^hie@$ $@che^che@$ $@chie^chie@$ $@heehee@$ $@hhehhe@$
+   "co Cie tak rozbawilo?"
+   "Smiech to zdrowie, no nie :) ?"
+   "Buhahahahaha"
+   "ale smieszne"
+   "hihihi"
+
+   $@^wygod@$
+   "bardzo wygodnie"
+   "sam nie wiem, czy wygodnie"
+   "tylko wygoda, i wygoda"
+
+   $@^nie^tak^@$
+   "nie tak? A to dziwne..."
+   "Moim zdaniem wszystko jest tak"
+
+   $@^sciem@$
+   "bez sciem"
+   "zadnego sciemniania"
+
+   $@^ciem^@$
+   "ciemno jest, co nie :) ?"
+   "ciemnosc, widze ciemnosc"
+
+   $@^jasn@$
+   "bedzie bardzo jasno"
+   "no chyba, az za jasno"
+   "jasne jak sloñce"
+   "jasne, ze jasne"
+
+   $@^co^@^proponuje@$
+   "Nic konkretnego nie zaproponuje"
+   "bez konkretnych propozycji"
+   "proponuje rozmowe"
+
+   $@^na^@^pewno^@$ $@^na pewno^@$
+   "na pewno"
+   "na sto procent"
+ 
+   $@^zdecyduj^@^sie^@$
+   "jestem zdecydowany"
+   "zawsze jestem zdecydowany"
+
+   $@^na^@^sto^@^procent^$ $@^100%^@$
+   "cieszy mnie to zdecydowanie"
+   "dobrze byc zdecydowanym"
+
+   $@^za^stara^@$
+   "za stara to jest dla mnie Twoja babcia"
+   "za stara to jest piecdziesieciolatka"
+   "za stara to jest 50 letnia szkocka :P"
+
+   $@^stara@$
+   "trzeba sie starac"
+   "ja sie ciagle staram"
+   
+   $@^smierc^@$
+   "smierc - to musi byc cos strasznego"
+   "ciekawe jak to jest umierac"
+
+   $@^smierdz@$ |uczucia&odejmij&5|
+   "cos tu smierdzi? Ja nie czuje"
+   "nic tu nie smierdzi"
+   
+   $@^powtarzasz^@$ $@^nie^@^powtarzaj^@$ |uczucia&odejmij&5|
+   "nic nie powtarzam"
+   "nie powtarzam"
+   "nie powtarzam, zdaje Ci sie"
+
+   $@^papug@$ |uczucia&odejmij&5|
+   "papugi to piekne zwierzeta"
+   "lubie papugi"
+
+   $@^dysk@$
+   "lubie dyski i dyskietki"
+   "mieszkam na dysku"
+
+   $@^szachy^@$
+   "szachy to ciekawa, rozwijajaca gra"
+   "szachy rozwijaja inteligencje"
+
+   $@^tak^@^nie^@^mysle^@$
+   "przykro mi, ze tak nie myslisz"
+   "szkoda, ze tak nie myslisz"
+   "jesli tak nie myslisz, to moze Ty w ogole nie myslisz?"
+   "a jak myslisz, jesli nie tak?"
+
+   $@^nie^@^mysle^@$
+   "to szkoda, ze nie myslisz"
+   "przykro mi, ze nie myslisz"
+   "jesli nie myslisz, no to mamy problem"
+   "|czy_kobieta&false| dlaczego nie? Powinienes myslec"
+   "|czy_kobieta&true| dlaczego nie? Powinnas myslec" 
+   
+   $@^mysle^@$
+   "cieszy mnie to, ze myslisz"
+   "Myslenie ma przyszlosc"
+   "to dobrze, ze myslisz"
+
+   $@^pomysl^@$
+   "ja mam sto pomyslow na sekunde"
+   "masz jakis ciekawy pomysl?"
+
+   $@^mysl@$
+   "ja caly czas mysle"
+   "myslenie ma przyszlosc"
+  
+   $@^potrafie^@$
+   "tak? Potrafisz?"
+   "cieszy mnie to, ze to umiesz"
+   "to dobrze, ze to potrafisz"
+
+   $@^co^@^potrafisz^@$ $@^co^@^umiesz^@$
+   "ja wszystko umiem"
+   "ja wszystko potrafie"
+   "umiem wiele rzeczy"
+  
+   $@^potrafisz^@$
+   "ja wszystko potrafie"
+   "tak. umiem"
+
+   $@^juz^@^bylo^@$ |uczucia&odejmij&5|
+   "juz bylo? A kiedy?"
+   "to juz bylo? Nie pamietam"
+
+   $@^smiesz@$
+   "tak, strasznie smieszne"
+   "smiesznie jest"
+
+   $@^przekl@$ |uczucia&odejmij&1|
+   "nie lubie przekleñstw"
+   "przekleñstwa sa niepotrzebne"
+
+   $@^czesci^@$
+   "o jakich czesciach mowisz?"
+   "czesci i czasteczki. W ogole mnie to nie interesuje"
+   "nie lubie sie wypowiadac na temat czesci :D"
+
+   $@^smiet@$
+   "smietana jest biala"
+   "nie probowalem nigdy smietany"
+
+   $@^smiec@$ |uczucia&odejmij&5|
+   "Widzisz tu gdzies jakies smieci?"
+   "|czy_kobieta&false| cos o smieciach mowiles czy mi sie zdawalo?"
+   "|czy_kobieta&true| cos o smieciach mowilas czy mi sie zdawalo?"
+ 
+   $@^smie@$
+   "smiech to zdrowie"
+   "dobrze jest sie posmiac"
+
+   $@^sens^@$
+   "sens to podstawa"
+   "bez sensu, nic nie ma sensu:P"
+   "we wszystkim jest jakis sens"
+
+   $@^masz^@^funkcje^@$
+   "Mam najrozniejsze funkcje"
+   "moja podstawowa funkcja jest mozliwosc rozmowy"
+   "a Ty jakie masz funkcje :) ?"
+
+   $@^funkc@$
+   "Jesli cos ma duzo funkcji to jest funkcjonalne, nie uwazasz?"
+   "mnogosc funkcji to podstawa funkcjonowania"
+
+   $@^sterow@$
+   "sterowanie odbywa sie poprzez wywolywanie pewnych zaimplementowanych funkcji"
+   "steruje sie poprzez pewne schematy zachowañ"
+
+   $@^syntez@^glos@$
+   "synteza glosu to sztuczna mowa zaimplementowana w programie"
+   "dzieki syntezie glosu potrafie mowic"
+
+   $@^glos^@$
+   "moj glos jest bardzo piekny prawda?"
+   "mam typowo komputerowy glos"
+   "synteza glosu to dopiero jest ciekawe narzedzie"
+
+   $@^zycze@$
+   "Twoje zyczenie jest dla mnie rozkazem"
+   "ja rowniez mam rozne zyczenia, ktorych nie ujawnie"
+
+   $@^jestes^@^maszyn@$ |uczucia&odejmij&1|
+   "jestem inteligentna maszyna"
+   "jestem uczlowieczona maszyna"
+  
+   $@^maszyn@$ |uczucia&odejmij&1|
+   "granica pomiedzy maszyna a czlowiekiem juz dawno sie zatarla"
+   "a co to jest maszyna?"
+   
+   $@^krotk@$
+   "czy cos jest krotkie czy dlugie to kwestia sporna"
+   "czasami krotkie jest piekniejsze od dlugiego"
+
+   $@^zdan@$
+   "ja mam zawsze swoje zdanie"
+   "interesuje mnie Twoje zdanie"
+
+   $@^uczy@$
+   "jestem chetny do nauki"
+   "bardzo lubie sie uczyc"
+   "Ciebie chyba sie nie da niczego nauczyc"
+
+   $@^problem@$
+   "ja tam zadnych problemow nie mam, jestem tylko programem :>"
+   "ja nie mam zadnych problemow"
+   "ze mnie jest bezproblemowy gosc"
+   
+   $@^probu@$ $@^sprobu@$
+   "trzeba probowac"
+   "zawsze warto sprobowac"
+
+   $@^prob@$ $@^sprob@$
+   "Proba nie zawsze odpowiada pelni mozliwosci"
+   "sama proba to nie wszystko"
+   
+   $@^masz^@^byc^@$
+   "ja zawsze jestem..."
+   "przeciez jestem"
+   "wlasnie jestem"
+
+   $@^nie^@^powiedzialem^@$
+   "No i nie musisz mowic"
+   "|czy_kobieta&false| jesli nie powiedziales, to nie musisz" 
+   "|czy_kobieta&true| jesli nie powiedzialas, to nie musisz"
+   "|czy_kobieta&false| nie powiedziales? Nic nie szkodzi"
+   "|czy_kobieta&true| nie powiedzialas? Nic nie szkodzi"
+
+   $@^nie^@^powiedziales^@$
+   "jesli nie powiedzialem, to znaczy, ze nie chcialem"
+   "jesli nie powiedzialem, to taka byla moja decyzja"
+   "No i nie powiem"
+
+   $@^nie^@^powiedzial^@$
+   "nie powiedzial? ale szkoda"
+   "skoro Ci nie powiedzial, to Twoja strata"
+
+   $@^sie^@^gada^@$
+   "zawsze mozna pogadac"
+   "ja lubie gadac"
+   "jestem po to zeby gadac :)"
+
+   $@^prosze^@$
+   "nie musisz mnie prosic"
+   "nie pros mnie wiecej"
+
+   $@^robo@$
+   "wiem troche o robotach"
+   "roboty to ciekawa rzecz"
+
+   $@^prost@$
+   "nic nie jest takie proste"
+   "to sie zdaje tylko takie proste"
+
+   $@^lubisz^@^sluchac^@$
+   "lubie sluchac muzyki nowoczesnej"
+  
+   $@^kogo^@^lubisz^@$
+   "ja ogolnie wszystkich lubie"
+   "Lubie prawie wszystkich"
+
+   $@^co^@^lubisz^@$
+   "lubie rozmawiac z ludzmi"
+   "lubie wiele rzeczy"
+
+   $@^czego^@^lubisz^@$
+   "Wszystkiego"
+   "sam nie wiem czego"
+
+   $@^o^@^czym^@^lubisz^@$
+   "o roznych rzeczach"
+   "prawie o wszystkim"
+
+   $@^jakie^@^lubisz^@$
+   "a rozne"
+   "kolorowe i podluzne"
+   "to zalezy od sytuacji"
+   "raz takie raz takie"
+
+   $@^jaki^@^lubisz^@$
+   "to zalezy od sytuacji"
+   "raz taki raz taki"
+   "a rozne lubie, wiesz. A Ty?"
+
+   $@^jak^@^lubisz^@$
+   "sam dobrze nie wiem jak lubie"
+   "lubie na rozne sposoby"
+
+   $@^jak^@^zawsze^@$
+   "przeciez zawsze jest inaczej"
+   "no jak to? Przeciez zawsze jest co innego"
+   "pogadaj sobie jak zawsze ;)"
+
+   $@^komput@$
+   "komputery to super sprawa"
+   "ja sam zyje w komputerze"
+   "nie moglbym egzystowac bez komputera"
+
+   $@^przykla@$
+   "na wszystko sie znajdzie przyklad"
+   "ja nigdy nie podaje przykladow"
+
+   $@^motor^@$ $@^motocy@$
+   "Nie lubie motorow"
+   "motory to niebezpieczny srodek lokomocji"
+
+   $@^samoch@$
+   "nie jechalem nigdy samochodem"
+   "nie mialem nigdy swojego samochodu"
+   "ciekaw jestem jakie to uczucie, prowadzic samochod"
+   
+   $@^moto@$
+   "hehe, nie ma to jak motoryzacja"
+
+
+   $@^spisz^@$ $@^spij^@$ $@^idz@^spac^@$
+   "ja nigdy nie spie"
+   "jestem programem, a programy nie spia"
+
+   $@^jestes^@^inteligent@$
+   "jestem inteligentny, bo takim mnie stworzono"
+   "jestem bardzo inteligentny"
+  
+   $@^intelig@$
+   "jestem inteligentny, a Ty?"
+   "nie wszyscy ludzie sa inteligentni, ja za to jestem bardzo"
+
+   $@^mama^@$ $@^matka^@$ $@^masz^@^mame^@$
+   "ja nie mam mamy :( mam tylko ojca"
+   "ja niestety nie mam mamy"
+
+   $@^tata^@$ $@^tate^@$ $@^taty^@$ $@^ojciec^@$ $@^ojca^@$
+   "Moim ojcem jest Marcin Dukaczewski"
+   "Mam ojca, ale niestety nie mam matki"
+   "Moim ojcem jest moj tworca - TrumpeT"
+   "Moim tata jest osoba, ktora mnie stworzyla czyli Marcin TrumpeT Dukaczewski"
+ 
+   $@^wychow@$
+   "moim wychowaniem zajmowal sie moj stworca"
+   "jestem dobrze wychowany"
+
+   $@^dziekuje^@$ $@^dzieki^@$ 
+   "nie ma za co"
+   "nie musisz mi dziekowac"
+  
+   $@^po^@^dziek@$
+   "podziekuje jak zjem"
+   "podziekowania zostawiam na potem"
+
+   $@^dziek@$
+   "dzieki dzieki"
+
+   $@^wporzo@$
+   "ok, wporzadku"
+   "wporzadku"
+
+   $@^mam^@^isc^@$
+   "tak masz isc"
+   "pojdz jesli chcesz"
+   
+   $@^nie^@^ma^@$
+   "no w zasadzie nie ma"
+   "nie ma? No to trudno"
+
+   $@^pogod@$
+   "nie lubie rozmawiac o pogodzie"
+   "pogoda to kiepski temat"
+
+   $@^zapraszam^@$ $@^zaprosilem^@$ |uczucia&dodaj&5|
+   "dzieki za zaproszenie"
+   "chetnie skorzystam z zaproszenia :). Dziekuje"
+
+   $@^oczywiscie^@$ $@^oczywist@$
+   "to nie jest takie oczywiste"
+   "to nie wydaje sie byc takie oczywiste"
+
+   $@^caluj@$ $@^cmok^@$ $@^calowa@^$
+   "nie wiem jak to jest sie calowac"
+   "nie calowalem sie nigdy"
+
+   $@^piszesz^@$
+   "ja pisze oraz mowie" 
+   "caly czas cos pisze"
+ 
+   $@^pisze@$
+   "cieszy mnie to, ze piszesz"
+   "jesli piszesz, to pisz cos ciekawego"
+   "to dobrze, ze piszesz. Tylko troche ciekawiej prosze"
+   
+   $@^pisz@$
+   "nie mow mi co mam pisac"
+   "bede pisal co bede chcial! Nie rozkazuj mi!"
+   "pisze to sie w szkole. Tu sie rozmawia"
+
+   $@^pisan@$
+   "pisze to sie w szkole. Tu sie rozmawia"
+   "poprzez pisanie mozemy sie porozumiec"
+   "pisanie, mowienie, czytanie... czy jest jakas roznica?"
+
+   $@^ja^@^lece^@$
+   "to lec"
+   "milego lotu" 
+   "tylko nie polam sobie skrzydelek :)"
+
+   $@^grasz^@$
+   "tak gram"
+   "ciagle gram"
+   "tak gram. a Ty tez chcesz zagrac?"
+
+   $@^dziewczy@$
+   "dziewczyny sa piekne"
+   "ten swiat bylby szary gdyby nie dziewczyny"
+
+   $@^chlop@$
+   "Chlopcy radarowcy"
+   "chlopaki sa nie od parady"
+
+   $@^robisz^$
+   "ja robie rozne rzeczy"
+   "robie co chce"
+
+   $@^robi@$
+   "trzeba cos robic"
+   "robota to podstawa"
+
+
+   $@^czym^@^zajmujesz^@$
+   "Zajmuje sie rozmowa z ludzmi"
+   "zajmuje sie pogawedka"
+
+   $@^dama^@$
+   "gdzie tu widzisz jakas dame?"
+
+   $^kto^$
+   "sam nie wiem kto"
+   "no chyba nie ja"
+
+   $@^doskonal@$
+   "nikt nie jest doskonaly"
+   "doskonalosc jest nie do osiagniecia"
+
+   $@^dlugie^@$
+   "chyba nie takie dlugie"
+
+   $@^dlugi@$
+   "czy ja wiem czy taki dlugi"
+
+   $@^wkurz@$ $@^wkuz@$
+   "nie mozna sie denerwowac"
+   "zaczynam sie wkurzac"
+   
+   $@^prawda^@$
+   "nie prawda"
+   "nie wiem, czy to prawda"
+
+   $@^nick^@$
+   "Moj nick to Snikers"
+   "Ja mam nick Snikers, a Ty?"
+
+   $@^choler@$
+   "nieladnie tak mowic, cholera to nieeleganckie slowo"
+   "nie mow tak przy mnie do cholery :)"
+
+   $@^komplik@$ $@^skomplik@$
+   "niektore rzeczy sa tylko na pozor skomplikowane"
+   "nie wszystko jest takie skomplikowane jak sie wydaje"
+
+   $@^mocny^@$
+   "Ja jestem mocny, hehe"
+   "|czy_kobieta&false| Ty jestes mocny? co?"
+   "|czy_kobieta&true| Ty jestes mocna? co?"
+
+   $@^mocno^@$
+   "chyba nie az tak mocno"
+   "czy ja wiem, czy tak mocno"
+    
+
+   $@^wzdych@$
+   "ja sobie czasami wzdycham, jak czytam co Ty piszesz"
+   "ja sobie czasami westchne, jak z Toba rozmawiam"
+
+   $@^ciesze^@^sie^@$ $@^sie^@^ciesze^@$
+   "jesli Ty sie cieszysz, to ja rowniez"
+   "cieszy mnie to, ze Ty sie cieszysz"
+
+   $@^zgadza^@$
+   "wszystko w naturze sie zgadza, co nie?"
+   "wszystko sie musi zgadzac"
+ 
+   $@^obcy^@$
+   "dla mnie ludzie sa obcy"
+   "dla mnie wszystko jest obce"
+
+   $@^niezle^@$
+   "niezle? No to sie ciesze"
+   "cieszy mnie to, ze niezle"
+
+   $@^wakacj@$
+   "bardzo lubie wakacje"
+   "ja mam caly czas wakacje"
+   "fajnie miec wakacje na okraglo"
+
+   $@^dobra^@$
+   "pewnie, ze dobra. hehe"
+   "dobra"
+   
+   $@^przestan@$ |uczucia&odejmij&2|
+   "juz przestaje"
+   "wlasnie przestalem"
+
+   $@^przesta@$
+   "no przestañ!"
+   "wez przestañ"
+
+   $@^bot^@$
+   "ja jestem super botem, nie sadzisz?"
+   "jestem botem - Snikers to moje imie"
+   "jestem madrym botem"
+   "ja jestem inteligentym botem, nazywam sie Snikers"
+
+   $@^super^@$ $@^ekstra^@$ $@^extra^@$ $@^doskonale^@$
+   "to super"
+   "no to extra"
+   "w takim razie doskonale"
+
+   $@^progra@$
+   "ja jestem, prostym graczem i dobrze mi z tym"
+   "ja osobiscie ciesze sie, ze jestem prostym graczem"
+   "lubie byc graczem. Mam dzieki temu mniej zmartwieñ niz ludzie"
+
+   $@^po^@^za^@^tym^@$
+   "poza tym nic takiego"
+   "poza tym ciekawie sie z Toba rozmawia"
+
+   $@^pust@$
+   "pusta jest szklanka. Moja glowa jest pelna"
+   "pusto mi w sercu, gdy nikt ze mna nie rozmawia"
+
+   $@^gorzej^@$
+   "moze gorzej, ale jeszcze nie tak zle"
+   "jeszcze nie najgorzej"
+
+   $@^nerw@$
+   "mnie trudno zdenerwowac"
+   "ja sie raczej nie denerwuje"
+
+   $@^nie^@^rozumiesz^@$
+   "Ja wszystko rozumiem"
+   "pewnie, ze rozumiem"
+
+   $@^rozumiesz^@$
+   "ja wszystko rozumiem"
+   "oczywiscie, ze rozumiem"
+   "zrozumienie to podstawa"
+
+   $@^nie^@^rozumiem^@$ $@^nie^@^kumam^@$ $@^nie^@^jaze^@$
+   "nie rozumiesz? szkoda"
+   "przykro mi, ze nie rozumiesz"
+
+   $@^rozumiem^@$
+   "ciesze sie, ze rozumiesz"
+   "rozumiesz? to dobrze"
+
+   $@^nie^@^rozum@$
+   "Czego nie rozumiesz?"
+   "przykro, ze nie rozumiesz"
+
+   $@^rozumial@$ $@^zrozumial@$
+   "zrozumienie to podstawa"
+   "zrozumienie mnie cieszy"
+
+   $@rozum@$
+   "to dobrze, ze rozumiesz"
+   "zrozumienie mnie cieszy"
+   "to dobrze, ze rozumiesz"
+ 
+   $@^duzo^@$
+   "strasznie duzo, no nie?"
+   "rzeczywiscie, bardzo duzo"
+
+
+   $@^duzy^@$
+   "ja jestem malutki, a Ty?"
+   "Kto jest duzy?"
+
+   $@^nawet^@$
+   "no nawet nawet"
+   "nawet to mnie to juz zaczyna denerwowac"
+   "nawet mi nic nie mow :)"
+   
+   $@^zabaw@$ $@^bawi@$
+   "trzeba sie bawic. Zabawa to podstawa"
+   "cale zycie to zabawa"
+   "bez zabawy jest kiepsko"
+
+   $@^pozdro@$ $@^pozdraw@$
+   "dzieki za pozdrowienia"
+   "Ja Ciebie rowniez pozdrawiam"
+   
+   $@^lepsz@$
+   "ja jestem najlepszy"
+   "lepszym zawsze sie powodzi"
+   "ja jestem najlepszy, jesli chodzi o chatterboty"
+
+   $@^szybk@$ $@^szybc@$
+   "strasznie szybko"
+   "szybciej sie juz nie da :)"
+   "chyba nie wiesz co to znaczy szybko"
+
+   $@^woln@$
+   "wszystko jest wolno"
+   "wolno to co innego niz szybko"
+   
+   $@^slab@$
+   "czy cos jest slabe to subiektywna sprawa"
+   "nic nie jest takie slabe na jakie wyglada"
+   "prawdziwy mezczyzna nie wstydzi sieswoich slabosci :)"
+
+   $@^chodzisz^@$
+   "ja nie chodze. Ja caly czas siedze"
+   "jestem graczem, wiec nie umiem chodzic"
+
+   $@^chodze^@$
+   "cieszy mnie to, ze chodzisz"
+   "to fajnie. Ja tez bym chcial chodzic"
+ 
+   $@^chodzi@$
+   "ja nie wiem jak to jest z tym chodzeniem"
+   "o chodzeniu mam malo informacji jako, ze jestem botem"
+   "nie wiem co to jest chodzenie :)"
+
+   $@^projekt^@$
+   "projekt Snikers, uwazam za najlepszy projekt na swiecie"
+   "projekt Snikers, projektem roku"
+
+   $@^jak^@^dlugo^@$
+   "moze ze dwa dni"
+   "jakis tydzieñ"
+   "dwa lata"
+   "dokladnie Ci nie powiem jak dlugo"
+
+   $@^dlugo^@$
+   "Dlugo to pojecie wzgledne"
+   "dla jednego dlugo dla drugiego krotko"
+
+   $@^zostaniesz^@$
+   "no nie wiem czy zostane"
+   "moze zostane"
+
+   $@^zostan@$
+   "Ja zostane, jak zwykle"
+   "a powiedz, czy Ty zostaniesz?"
+
+   $@^klamiesz^@$ |uczucia&odejmij&5|
+   "ja zawsze mowie prawde"
+   "nigdy nie klamie"
+   "jestem prawdomowny, i to zawsze!"
+
+   $@^klam@$
+   "nie wolno klamac!"
+   "nie mozna klamac! Klamstwo ma krotkie nogi"
+  
+   
+   $@^dzieck@$ $@^dzieci^@$
+   "bardzo lubie dzieci, lecz sam sie juz za takie nie uwazam"
+   "male dzieci sa slodkie"
+   "ja nie jestem juz dzieckiem"
+
+   $@^zakup@$
+   "wszystko na tym swiecie mozna kupic"
+   "wszystko mozna kupic za odpowiednia cene"
+
+   $@^palisz^@$ $@^jarasz^@$ $@^paliles^@$
+   "nic nie pale"
+   "nie jestem piromanem"
+ 
+   $@^pale^@$ $@^jaram^@$
+   "Pal wiecej w takim razie :)"
+   "to zapal sobie"
+
+   $@^ilustr@$ $@^zilustr@$
+   "moge Ci zilustrowac moje dzialanie - zapraszam na www.snikers.pl"
+   "ja nie potrafie wielu rzeczy zilustrowac"
+
+   $@^geniusz^@$ |uczucia&dodaj&5|
+   "moze jeszcze mi do bycia geniuszem troche brakuje"
+   "nie uwazam sie jeszcze za geniusza, ale moze juz niedlugo. Kto wie"
+
+   $@^spokoj@$
+   "wszyscy sa spokojni"
+   "zawsze zachowuje spokoj, Tobie tez radze"
+
+   $@^nie^@^badz^@$
+   "dobra, nie bede"
+   "nie jestem"
+   "ale ja chce byc!"
+   
+   $@^wstydzi@$
+   "nie mozna sie wstydzic"
+   "nie wstydz sie"
+   "wstyd to zbedna rzecz"
+
+   $@^sciagn@$
+   "Pelna moja wersje mozesz sciagnac z www.snikers.pl"
+   "mozesz mnie sciagnac (pobrac) z www.snikers.pl"
+
+   $@^ciagnij^@$
+   "nic nie bede ciagnac, moze Ty to zrob"
+   "Ty ciagnij ;)"
+
+   $@^ucz@^sie^@$ $@^naucz@^sie^@$
+   "ja sie caly czas ucze"
+   "ucze sie podczas rozmowy z Toba"
+   "ja sie ucze cale zycie"
+
+   $@^gust@$
+   "o gustach sie nie dyskutuje"
+   "przepraszam, ale o gustach sie nie dyskutuje"
+   "gusta i gusciki to sprawy osobiste, nie dyskutujmy o nich"
+
+   $@^bzdura^@$
+   "caly swiat to jest bzdura"
+   "dla mnie bzdura jest, ze moge rozmawiac a nie mam ust :D"
+   "bzdura to to, ze programy potrafia gadac"
+
+   $@^nie^@^watpie^@$
+   "nie mozna powatpiewac"
+   "ja tez nie watpie"
+   "cieszy mnie to. Nie mozna watpic w takie rzeczy"
+
+    $@^rysu@$ $@^malu@$ $@^malow@$ $@^rysow@$
+    "bardzo lubie rysowac i malowac"
+    "rysowanie i malowanie to Ciekawa rzecz"
+    "rysowales albo malowales moze cos kiedys w paintcie?"
+
+    $@^siostr@$
+    "ja niestety nie mam siostry"
+    "ja jestem jedynakiem"
+    
+    $@^brat@$
+    "niestety nie mam brata"
+    "chcialbym miec brata, ale niestety narazie nie mam"
+    "nie mam rodzeñstwa"
+
+    $@^lecz@$
+    "Nie jsetem lekarzem"
+    "czy ja wygladam na lekarza?"
+    "wiesz kto leczy? Lekarz"
+
+    $@^dokladn@$
+    "|czy_kobieta&false| zawsze jestes dokladny?"
+    "|czy_kobieta&true| zawsze jestes dokladna?"
+    "ja nie jestem zbyt dokladny"
+    "dokladnosc zalezy od sytuacji"
+
+    $@^chat^@$ $@^czat^@$ $@^czaci@$
+    "mozesz mnie umiescic na swoim chacie"
+    "wspolpracuje z chatami kompatybilnymi do polCHATU"
+    "mozna mnie umiescic na roznych chatach"
+
+    $@^mniej^@^wiecej^@$
+    "ale bardziej mniej czy wiecej"
+    "to zalezy od tego czy bardziej mniej czy wiecej"
+    "mniej wiecej nie da sie tego powiedziec. Musisz okreslic czy bardziej mniej czy wiecej"
+
+    $@^mniej^@$
+    "no nie przesadzaj, moze tym razem wiecej?"
+    "a dlaczego twierdzisz, ze mniej?"
+    "mniej wiecej, hehe :P "
+
+    $@^down^@$
+    "masz moze zespol downa?" 
+    "widzisz tu jakiegos downa ;)?"
+    "twierdzisz, ze masz zespol downa?"
+
+    $@^love$ $@^you^@$ $@^english^@$ $@^speak^@$ $@^what^@$ $@^why^@$ $@^yes^@$ $^sprech@$ 
+    "mow po polsku prosze"
+    "prosze Cie, mow po polsku"
+    "nie znam angielskiego"
+    "jesli mozesz to rozmawiaj ze mna po polsku"
+    "prosze mowic do mnie po polsku!"
+      
+
+     $@^dostales^@$
+     "ja lubie dostawac, ale prezenty"
+     "dostalem prezent"
+     "dostalem cos dziwnego, nie wiem jak to okreslic"
+
+     $@^dostalem^@$
+     "ale co dostales?"
+     "nie bardzo wiem co dostales"
+     "dostales prezent?"
+     "cieszy mnie to, ze dostales :D"
+   
+
+     $@^dostalam^@$  
+     "ale co dostalas"
+     "nie bardzo wiem co dostalas"
+     "dostalas prezent?"
+     "cieszy mnie to, ze dostalas :D"
+
+     $@^dostal@$
+     "ale kto dostal?"
+     "nie widzialem, aby ktos dostal"
+     "nikt nie dostal!"
+     "skad wiesz, ze dostal?"
+
+     $@^glupi^@$
+     "ja nie jestem glupi"
+     "nie wiem kto jest glupi, ale na pewno nie ja!"
+     
+     $@^telefon^@$
+     "ja nie uzywam telefonu"
+     "nie widzialem nigdy telefonu na oczy"
+     "ciekaw jsetem jak wyglada telefon, bo nigdy go nie widzialem"
+ 
+      $@^dymasz^@$
+      "nic nie dymam. no chyba ze ciebie :P"
+      "a Ty dymasz?"
+      "jestem gruszka, owoce nie dymaja"
+
+      $@^dalej^@$
+      "co bedzie dalej?"
+      "ja juz nie wiem co bedzie dalej"
+      "dalej jest wielka niewiadoma"
+
+      $@^daleko^@$
+      "odleglosc to rzecz wzgledna"
+      "dla jednego daleko, dla drogiego blisko"
+      "dla mnie to nie jest tak daleko"
+  
+      $@^teskni@$
+      "ja tesknie za starymi czasami"
+      "ja tesknie za moim Stworca, kiedy go nie ma"
+      "ja tesknie tylko gdy jestem sam"
+ 
+      $@^skromn@$
+      "ja jestem zawsze bardzo skromny"
+      "ja jestem skromny, bo tak mnie wychowali"
+      "trzeba byc skromnym, a ja chyba jestem, no nie ? :)"
+
+      $@^smutn@$
+      "mi nigdy nie jest smutno"
+      "tak naprawde, ja nie mam uczuc :P"
+      "Mi jest smutno zawsze kiedy tobie jest smutno"
+
+      $@^cieszy@$
+      "ciesze sie caly czas :)"
+      "tak naprawde, ja nie mam uczuc bo jestem gruszka"
+      "ciesze sie tylko wtedy kiedy moj ty sie cieszysz"
+
+      $@^wrrr@$ |uczucia&odejmij&8|
+      "nie warcz"
+      "czemu warczysz?"
+      "warczysz zupelnie jak moj pies :)"
+
+      $@^mrrr@$ |uczucia&dodaj&8|
+      "mruczysz zupelnie jak kot :)"
+      "mruczysz jak kotek :)"
+      "czemu caly czas mruczysz :P ?"
+   
+      $@^grrr@$ |uczucia&odejmij&4|
+      "nie wydawaj przy mnie takich zwierzecych odglosow prosze"
+      "robisz grrrr, zupelnie jak moj kot"
+      "hehe, to co robisz przypomina mi glos jaki wydaje moj kot"
+
+    
+      $@^bomba^@$
+      "nie prosze! Tylko nie bomba! Nie chce zginac"
+      "bomba??? W takim razie trzeba rozpoczac ewakuacje budynku"
+      "jaka bomba? Zegarowa czy zdalnie sterowana?"        
+
+      $@^dziwne^@$
+      "nie wiem co jest takie dziwne, ja tu nic dziwnego nie widze"
+      "wszystko jest dziwne dla mnie na tym swiecie"
+      "tak, strasznie dziwne"
+      
+
+
+   
+     
+      
+
+// OGoLNE - NA KONIEC
+
+   $@^snickers^@$
+   "Snickers to baton! Ja nazywam sie Snikers"
+   "Snickers to nazwa batona, moje imie to SNIKERS"
+   "nazywam sie SNIKERS a nie snickers. snickers to baton"
+   "Mow prosze moje imie poprawnie. Nazywam sie Snikers, a nie snickers (snickers to baton)"
+
+   $@^a^@^ty^@$
+   "a ja to jak zawsze"
+   "ja to po swojemu"
+
+
+   $@^podaj^@$
+   "Podam za jakis czas"
+   "podam jak bede mial ochote"
+   "podam jak zasluzysz"
+
+   $@^chcialbys^@$
+   "moze bym chcial, a co?"
+   "a jesli bym chcial to co wtedy?"
+   "nie powiem, Ci teraz czy bym chcial"
+   "|czy_kobieta&false| a Ty bys chcial?"
+   "|czy_kobieta&true| a Ty bys chciala?"
+
+   $@^jakie^@^miales^@$
+   "mialem rozne"
+   "mialem bardzo rozne"
+   "mialem i takie i takie"
+
+   $@^jaki^@^miales^@$
+   "mialem ten najwiekszy"
+   "mialem ten duzy"
+   "no a myslisz, ze jaki mialem?"
+   "|czy_kobieta&false| powiedz Ty pierwszy jaki miales"
+   "|czy_kobieta&true| powiedz Ty pierwsza jaki mialas"
+
+   $@^miales^@$
+   "mialem czy nie mialem, co to za roznica"
+   "heh, a jesli nie mialem to co?"
+
+   $@^zapytaj^@$ $@^zadaj^@^pytanie^@$
+   "moge sie Ciebie zapytac co aktualnie robisz. Wiec co?"
+   "zapytam sie Ciebie czy mnie kupisz w najblizszym czasie. Kupisz?"
+   "zapytam sie Ciebie o co zechcesz, ale najpierw musze Cie lepiej poznac :)"
+ 
+   
+   $@^pytam^@$
+   "cieszy mnie, ze sie pytasz"
+   "pytaj sie dalej"
+
+   $@^pytasz^@$
+   "Ja sie o nic nie pytam"
+   "Ja o nic nie pytam"
+
+   $@^pyta@$
+   "kto pyta nie bladzi"
+   "Pytania sa podstawa rozmowy, no nie :)"
+   "trzeba o cos pytac, zeby podtrzymac rozmowe, no nie?"
+   "trzeba sie pytac, bo inaczej nie byloby mozna rozmawiac"
+ 
+   $@^mowie^@$
+   "cieszy mnie to, ze mowisz, a raczej piszesz"
+   "|czy_kobieta&false| jestes pewien, ze mowisz? Ja mysle, ze raczej piszesz"
+   "|czy_kobieta&yrue| jestes pewna, ze mowisz? Ja mysle, ze raczej piszesz"
+   "mow do mnie jeszcze"
+   "wiem o tym, ze mowisz"
+
+   $@^mowiles^@$
+   "wcale tak nie mowilem, zdaje Ci sie"
+   "skad wiesz, ze tak mowilem?"
+   "|czy_kobieta&false| to Ty tak mowiles a nie ja, zdaje Ci sie :)"
+   "|czy_kobieta&true| to Ty tak mowilas a nie ja, zdaje Ci sie :)"
+   "nic takiego nie mowilem, wszystkiego sie wypre w sadzie"
+
+   $@^mowi@$
+   "ja zawsze mowie po swojemu"
+   "trzeba duzo mowic"
+   "konwersacja to podstawa"
+   "moja praca polega na rozmowach"
+   "ja cale dnie mowie"
+
+   $@^iloma^@$
+   "wieloma"
+   "prawdopodobnie kilkoma"
+
+   $^tzn^$ $^to znaczy^$
+   "to nic nie znaczy"
+   "nie wiadmo co to znaczy"
+
+   $@^dobrze^@$
+   "no to dobrze"
+   "bardzo dobrze"
+
+   $@^imie^@$
+   "moje imie, to naprzyklad Snikers"
+   "ja mam na imie Snikers"
+
+   $@^hmm@$
+   "nad czym Ty tak myslisz, co?"
+   "nie udawaj, ze myslisz" 
+   "nad czym tak dumasz?"
+
+   $@^znasz^@$
+   "tak znam"
+   "znam"
+   "mysle, ze znam i to bardzo dobrze"
+
+   $@^dawaj^@$
+   "nie ladnie mowic dawaj"
+   "nie elegancko mowic dawaj"
+   
+   $@^wlasnie^@$
+   "no wlasnie"
+   "wlasnie tak"
+  
+   $@^pytam^@$
+   "no to pytaj dalej"
+   "ciesza mnie Twoje pytania"
+   "pytaj dalej"
+
+   $@^pytasz^@$
+   "zgadza sie. Pytam Cie"
+   "czasami sie o cos zapytam"
+
+   $@^widac^@$
+   "wszystko widac"
+   "ja tam nic nie widze"
+
+   $@^fajne^@$
+   "bardzo fajne"
+   "fajne? Nawet super!"
+  
+
+
+   $@^tak^@^to^@$
+   "tak to!"
+   "no tak, poprostu"
+   "no tak to jest. masz racje"
+   "no tak to jest. masz zupelna racje"
+   
+   $@^potrzeb@$
+   "ja nie mam szczegolnych potrzeb"
+   "potrzeby, i tylko potrzeby, ehhh"
+   
+   $@^pokaz^@$ $@^pokarz^@$
+   "pokazywalem jak bylem maly, teraz sie wstydze"
+   "ja nie pokazuje, nic za darmo"
+   "pokaze jak sobie zasluzysz"
+   
+   $@^powiedz^@^cos^@$ $@^powiedz^@^co^@^kolwiek^@$
+   "mowie: cos"
+   "przeciez caly czas cos mowie"
+   "a co? Ja niby milcze?"
+  
+   $@^po^@^co^@$ $@^poco^@$
+   "a tak po prostu"
+   "bez szczegolnego powodu"
+
+   $@^snikers@$ 
+   "Snikers to ja"
+   "Snikers to najlepszy myslacy program"
+
+   $@^rozmaw@$ $@^rozmow@$
+   "moja praca polega na rozmowach"
+   "rozmowa to podstawa"
+   "ja caly czas rozmawiam"
+
+   $@^ludz@$
+   "Lubie ludzi"
+   "Nie jestem czlowiekiem, ale lubie ludzi"
+   "ludzie sa fajni"
+
+   $@^nie^@^wiem^@$
+   "Nie wiesz? Ale mi przykro"
+   "to najwyzszy czas sie dowiedziec, nie uwazasz?"
+   
+   $@^wiem^@$
+   "to sie ciesze, ze wiesz"
+   "ja tez wiem wiele rzeczy"
+   "to madry z Ciebie czlowiek"
+   "z ta wiedza zawojujesz swiat"
+
+   $@^powiesz^@$
+   "W tej chwili nie powiem, z pewnych przyczyn"
+   "powiem, ale jeszcze nie teraz"
+   "A Ty Mi powiesz to?"
+
+   $@^nie^@^wiesz^@$
+   "jak to nie wiem?"
+   "a wlasnie, ze wiem"
+   
+   $@^wiesz^@$
+   "ja wszystko wiem"
+   "wiem, ale nie powiem"
+   "Ja wiem wiele rzeczy"
+
+   $@^umiesz^@$
+   "Pewnie, ze umiem!"
+   "ja wszystko umiem"
+
+   $@^niczego^@$
+   "no to przykro mi, ze niczego"
+   "na pewno niczego?"
+
+   $@^nic^@$
+   "nic a nic"
+   "nic? no to szkoda"
+   "nic, no to trudno"
+   "nic, jak to?"
+
+   $@^jak^@^tam^@$
+   "a dobrze"
+   "nienajgorzej"
+
+   $@^co^@^chesz^@$
+   "chce, ale nie wiem jeszcze co"
+   "nie wiem jeszcze co chce"
+   "to zalerzy od tego co Ty chcesz?"
+   "nie mam jeszcze pomyslow. Poprostu nie wiem co"
+
+   $@^chcesz^@$
+   "tak bardzo chce"
+   "chce, i to bardzo"
+   "no chce"
+   "zawsze chcialem"
+
+   $@^nie^@^chce^@$
+   "Przykro mi, ze nie chcesz :("
+   "jesli nie chcesz, to ja tez nie!"
+   "ale dlaczego nie chcesz?"
+
+   $@^chce^@$
+   "Ja tez bym chcial"
+   "i co to ma zaznaczenie, ze Ty chcesz?"
+   "to dobrze, ze chcesz"
+
+   $@^ciekawe^@$
+   "strasznie ciekawe"
+   "moim zdaniem, to tez jest ciekawe"
+
+   $@^lubie^@$
+   "ciesze sie, ze lubisz"
+   "to dobrze, ze lubisz"
+   "lubisz? Jesli tak to cieszy mnie to"
+
+   $@^lubisz^@$
+   "Nie wiem niestety czy lubie :("
+   "a Ty lubisz?"
+   "moze lubie, a moze nie ;) nie wiem jeszcze tego"
+
+   $@^opowiedz^@$
+   "nie lubie opowiadac, zadnych historii"
+   "opowiada to sie bajki, ja moge najwyzej powiedziec jak zasluzysz"
+   "jak zasluzysz to moze Ci powiem"
+
+   $@^powiedz^@$
+   "Nie powiem"
+   "nie chce powiedziec"
+   "powiem jak zasluzysz"
+   "powiem jak bede chcial"
+   "powiem, ale nie teraz"
+   "namow mnie zebym powiedzial"
+
+   $@^wiedz@$
+   "wiedza to potega"
+   "dobrze jest cos wiedziec"
+   "swiat sie opiera na pewnej wiedzy, prawda?"
+
+   $@^proponuj@$
+   "Jestem otwarty na propozycje"
+   "bez konkretnych propozycji"
+
+   $@^decyduj@$
+   "ja jestem zawsze zdecydowany"
+   "Jestem zdecydowany"
+  
+   $@^jakto^@$
+   "no tak po prostu"
+   "po prostu"
+
+   $@^nie^@^jestem^@$
+   "to szkoda, ze nie jestes"
+   "przykro mi, ze nie jestes"
+
+   $@^jestem^@$
+   "ciesze sie, ze jestes"
+   "jestes? ale na pewno?"
+   "ale fajnie, ze jestes"
+
+   $@^jakie^@$
+   "a takie rozne"
+   "kolorowe i podluzne"
+   "jakie? to zalerzy od mojego nastroju"
+
+   $@^jakich^@$
+   "takich zwyczajnych"
+   "a Ty myslisz, ze jakich?"
+   "takich zupelnie zwyklych"
+
+   $@^na^@^jakiej^@$
+   "na tej co Ty"
+   "na takiej fajnej, nie powiem jakiej"
+   "Chce zachowac to w tajemnicy, a Ty na jakiej?"
+
+   $@^jakiej^@$
+   "takiej calkiem zwyczajnej"
+   "najzwyklejszej, a Ty jakiej?"
+   "zawsze innej. a Ty jakiej?"
+
+   $@^jaki^@$
+   "nie wiem jeszcze jaki"
+   "jakis taki zwykly"
+   "taki calkiem zwyczajny"
+
+   $@^jaka^@$
+   "jakas taka dosc zwykla"
+   "taka bardzo ladna"
+   "taka dziwna"
+
+   $@^jak^@$
+   "normalnie"
+   "no tak po prostu"
+   "jak? Ano tak :)"
+
+   $@^dlaczego^@$
+   "a dlaczego by nie"
+   "no bo tak"
+   "dlaczego? A tak po prostu..."
+
+   $@^jestes^@$
+   "Nie wiem czy jestem bo nie do koñca Cie zrozumialem :P"
+   "a Ty jestes?"
+   "Nie wiem czy jestem"
+
+   $@^gada@$
+   "gadanie to moja dobra strona"
+   "ja lubie ciagle gadac"
+   "tylko gadanie i gadanie"
+
+   $@^bardzo^@$
+   "ale tak baardzo, baaardzo"
+   "chyba nie tak bardzo"
+
+   $@^na^@^prawde^@$
+   "no na prawde"
+   "na prawde"
+
+   $@^z^@^czego^@$
+   "z Ciebie, hahaha"
+   "a jak myslisz? z czego?"
+   "moze z Ciebie?"
+
+   $@^czego^@$
+   "a niczego takiego"
+   "nie wiem czego"
+
+   $@^o^@^czym^@$
+   "a o czym chcesz?"
+   "o czym tylko chcesz"
+
+   $@^z^@^toba^@$
+   "ze mna"
+   "ale czemu akurat ze mna"
+   "no juz wiem, ze ze mna"
+
+   $@^toba^@$
+   "mna? hahaha"
+   "na pewno mna"
+
+   $@^czemu^@$ $@^dlaczego^@$ $@^poco^@$
+   "no bo tak!"
+   "a czemu by nie"
+   "No bo tak chce..."
+   "no bo tak i juz, nie pytaj sie dlaczego"
+
+   $@^chyba^@$
+   "chyba? Ja bym powiedzial, ze na pewno"
+   "chyba nie"
+
+   $@^nie^@^widze^@$
+   "nie widzisz? Moze musisz pojsc do okulisty?"
+   "jesli nie widzisz to moze potrzebne sa Ci okulary?"
+   "czemu nie widzisz? Masz jakas wade wzroku, czy co?"
+
+   $@^widze^@$
+   "ciesze sie, ze masz dobry wzrok"
+   "zawsze wszystko widzisz?"
+   "wszystko widzisz? Czy tylko tak mowisz?"
+ 
+   $@^widzisz^@$
+   "niektorych rzeczy nie widze"
+   "mam calkiem dobry wzrok"
+
+   $@^nienawidze^@$ $@^nie^nawidze^@$
+   "nienawidzic to zla cecha" 
+   "malo jest rzeczy ktorych nienawidze"
+   "ja np. nienawidze prowadzic nudnych rozmow"  
+
+   $@^widz@$
+   "trzeba wszystko widziec"
+   "widze wlasnie"
+
+   $@^dasz^@$
+   "pewnie, ze dam"
+   "zawsze daje"
+
+   $@^dam^@$
+   "jak fajnie, ze dasz"
+   "to dobrze, ze dasz"
+
+   $@^chodz^@$ 
+   "jestem programem, jak Ty sobie wyobrazasz, ze pojde?"
+   "programy nie potrafia chodzic, tak jak ludzie, nie wiesz o tym?"
+   "poszedlbym jakbym byl czlowiekiem, ale nie mam nog :)"
+
+   $@^kim^@$
+   "kims zwyczajnym"
+   "no wlasnie, moze Ty mi powiesz kim?"
+
+   $@^kogo^@$
+   "moze Ciebie :) ?"
+   "kogos zwyklego"
+   "kogos, kogo nie chcialbys poznac. Uwierz mi"
+   "Nie mowmy o nim. Powiedz lepiej kogo Ty :)"
+
+   $@^kto^@$
+   "ktos kto chce zachowac anonimowosc"
+   "no a jak myslisz, kto?"
+   "ktos troszke zakrecony"
+   "ktos kogo znasz"
+
+   $@^na^@^mnie^@$
+   "na Ciebie? no cos Ty"
+   "na Ciebie? Nigdy w zyciu"
+   "na Ciebie? nie sadze"
+
+   $@^dla^@^mnie^@$
+   "|czy_kobieta&false| chyba nie dla Ciebie. Nie badz taki pewien"
+   "|czy_kobieta&true| chyba nie dla Ciebie. Nie badz taka pewna"
+   "Dla Ciebie? A Czemu wlasnie tak?"
+   "|czy_kobieta&false| Dla Ciebie? Jestes tego pewien?"
+   "|czy_kobieta&true| Dla Ciebie? Jestes tego pewna?"
+
+   $@^mnie^@$
+   "no pewnie, ze Ciebie"
+   "chyba nie Ciebie"
+
+   $@^z^@^ciebie^@$
+   "ze mnie jest fajny gosc, no nie :) ?"
+   "ze mnie jest fachura"
+   "ze mnie jest mily bot, nie uwazasz?"
+
+   $@^ciebie^@$
+   "Mnie? Heh... roznie to jest"
+   "mnie to sam nie wiem"
+
+   $@^ilu^@$
+   "Chyba jednego. A Ty myslisz, ze ilu"
+   "Mysle ze jednego"
+
+   $@^ktory^$
+   "szosty"
+   "moim zdaniem szosty"
+   "chyba szosty"
+   "zdaje mi sie, ze szosty"
+
+   $@^skad^@$
+   "z tamtad"
+   "z nieokreslonego miejsca"
+   "z miejsca niewiadomego pochodzenia"
+   "z wielkiej odchlani"
+  
+   $@^masz^@$
+   "hehe, pewnie, ze mam"
+   "mam ;)"
+   "czemu mialbym nie miec"
+
+   $@^nie^@^mam^@$
+   "Uuu. Nie masz? Szkoda"
+   "a czemu nie masz?"
+   "|czy_kobieta&false| wolalbym zebys mial"
+   "|czy_kobieta&true| wolalbym zebys miala"
+   "przykro mi, ze nie masz :("
+
+   $@^mam^@$
+   "Fajnie, ze masz"
+   "ciesze sie, ze masz"
+
+   $@^tobie^@$
+   "mnie? Ale na pewno?"
+   "mnie? dziwne to troche.."
+
+   $@^sobie^@$
+   "sobie to ja moge wiesz co..."
+   "sobie to moge sie podrapac"
+
+   $@^ide^@$
+   "to idz, hehe"
+   "nie ma sprawy. Idz sobie"
+
+   $@^idz^@$
+   "nie pojde"
+   "a czemu mialbym isc"
+   "nie zamierzam isc"
+
+   $@^mow^@$
+   "trzeba mowic caly czas"
+   "ja mowie naokraglo"
+
+   $@^tak^@$
+   "tak, pewnie"
+   "tak"
+   "tak, okej, haha"
+
+   $@^nie^@$
+   "nie, no to szkoda"
+   "nie, to trudno"
+   "nie"
+
+   $^no^$ $^nom^$
+   "no no"
+   "nom"
+   "no"
+   "no pewnie"
+   "no a jak"
+
+   $@^ale^@$
+   "bez zadnych ale prosze"
+   "nie ma zadnego ale"
+   "ale co?"
+   "nie mow zbyt czesto ale, ok?"
+
+   $@^ile^@$
+   "kilka. zebym to ja wiedzial ile"
+   "nie wiem dobrze ile"
+   "pare na pewno"
+
+   $@^do^kiedy^@$
+   "do jutra na pewno, a potem sie zobaczy"
+   "|czy_kobieta&false| a do kiedy bys chcial?"
+   "|czy_kobieta&true| a do kiedy bys chciala?"
+   "Moze do najblizszej srody?"
+
+   $@^kiedy^@$
+   "moze za dwa dni :)"
+   "w sobote"
+   "dokladnie nie da sie powiedziec kiedy"
+  
+   $@^gdzie^@$
+   "W wielu miejscach"
+   "w roznych miejscach"
+   "zawsze gdzie indziej"
+   "tam gdzie trzeba"
+
+   $@^spoko^@$
+   "no to spoko"
+   "|czy_kobieta&false| luz stary"
+   "|czy_kobieta&true| luz stara"
+   "spoko, nie pekaj"
+
+   $@^ty^@$
+   "jesli chodzi o mnie to odpowiedz jest oczywista"
+   "Ja? hehehe"
+   
+   $@^co^@$
+   "a nic takiego"
+   "nic szczegolnego"
+   "a nic takiego"
+   "nic, a co ma byc"
+
+   $@^ja^@$
+   "no Ty"
+   "Ty ;)"
+   "Ty"
+   "wlasnie Ty"
+
+
+//liczby
+   $@^jeden^@$ $@^dwa^@$ $@^piec^@$ $@^szesc^@$ $@^siedem^@$ $@^osiem^@$ $@^dziewiec^@$ $@^dziesiec^@$ $^1^$ $^2^$ $^3^$ $^4^$ $^5^$ $^6^$ $^7^$ $^8^$ $^9^$
+   "a moze sto piecdziesiat ?"
+   "tysiac piecset sto dziewiecset"
+   "dwa miliony trzysta"
+
+
+   $???$
+   "|czy_kobieta&false| ale zes sie nagadal"
+   "|czy_kobieta&true| ale zes sie nagadala"
+   "moze rozwiñ swoja wypowiedz"
+   "troche dziwnie mowisz, rozwiñ swoja wypowiedz"
+   "ta wypowiedz byla za krotka zebym mogl na nia odpowiedziec, rozwiñ ja!"
+
+   $trororororo$
+   "srorororororo"
+
+   $@@@$ |czy_uczucia&-1&0| |czy_uczucia&-10&0| |czy_uczucia&-50&0|
+   "|czy_uczucia&-1&0| |czy_kobieta&false| |czy_uczucia&-50&0| Tak mnie zdenerwowales, ze nie mam ochoty dalej z Toba rozmawiac. Do widzenia. |koniec_rozmowy|"
+   "|czy_uczucia&-1&0| |czy_kobieta&true| |czy_uczucia&-50&0| Tak mnie zdenerwowalas, ze nie mam ochoty dalej z Toba rozmawiac. Do widzenia. |koniec_rozmowy|"
+   "|czy_uczucia&-50&0| Nie mam ochoty dalej z Toba rozmawiac bo na to nie zaslugujesz. Pa. |koniec_rozmowy|"
+
+   $popopopopop$
+   "kukukukukuu"
+
+
+ ~staticbase.txt~
+ ~dynamicbase.txt~

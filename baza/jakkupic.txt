@@ -1,0 +1,17 @@
+   $@^sms@$
+   "smsy to super sprawa, dzieki temu mozesz mnie kupic!"
+   "wysylajac SMSa o tresci SXP na numer 7968 mozesz mnie kupic! Fajnie co nie?"
+   "dzieki SMSom mozesz mnie kupic"
+
+   $@^poco^@^cie^@kupic^@$ $@^czemu^@^cie^@kupic^@$
+   "powinienes mnie kupic abys mogl mnie zainstalowac na swoim komputerze,i a bym poprzez rozmowe z Toba stawal sie madrzejszy"
+   "jesli mnie kupisz bedziesz mogl posluchac jak do Ciebie mowie, dzieki syntezie glosu, oraz nauczyc mnie wielu rzeczy"
+   "w tej chwili nie ucze sie niczego od Ciebie, ale jesli mnie kupisz, bedziesz mogl uczyc mnie rozmowy, i bede stawal sie coraz madrzejszy"
+   
+   $@^cie^kupic^@$ $@^cie^dostac^@$ $@^cie^wziasc^@$ $@^kupic^cie^@$ $@^kupie^cie^@$ $@^cie^kupie^@$
+   "Aby mnie kupic wyslij SMSa o tresci SXP na numer 7968 a otrzymany KOD podaj na stronie www.snikers.pl"
+   "Wyslij SMSa o tresci SXP na numer 7968. Wiecej info na www.snikers.pl"
+
+   $@^ile^@^kosztujesz^@$
+   "9zl, platne Smsem"
+   "9 Polskich zlotych"

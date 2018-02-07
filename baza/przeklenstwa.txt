@@ -1,0 +1,85 @@
+//PRZEKLENSTWA
+
+   
+   $@^zajebis@$ |uczucia&odejmij&10| |uczucia&max&90|
+   "slowo zajebiscie i wszystkie jego odmiany nie jest najpiekniejszym slowem. Nie uzywaj go przy mnie"
+   "nie mow takiego slowa przy mnie :) nie lubie go"
+   "nie uzywaj slowa zajebiscie, oraz pochodnych w mojej obecnosci. Prosze. Nie lubie tego"
+
+  
+   $@^kurw@$ $@^skurw@$ $@^spieprz@$ $@^huj@$ $@^chuj@$ $@^cwel@$ $@pierd@$ $@jeb@$ $@^ciot@$ $@^cip@$ $@^pizd@$ $@^fiuc@$ $@^fiut@$ $@^kuta@$ $@^gown@$ $@^dziwk@$ $@^qrw@$ |uczucia&odejmij&15| |uczucia&max&40|
+   "Albo zaczniesz sie lepiej wyrazac albo przestane z Toba rozmawiac |ostatni&czy_przestac|"
+   "ladniej Cie nie nauczyli mowic?"
+   "|czy_kobieta&false| Jestes chamski"
+   "|czy_kobieta&true| Jestes chamska"
+   "ciekawszych odzywek nie masz?"
+   "uwazaj na slowa"
+   "|czy_kobieta&true| prostaczka..."
+   "|czy_kobieta&false| prostak..."
+   "mow grzeczniej albo zakoñczymy konwersacje |ostatni&czy_przestac|"
+   "nie uzywaj wulgaryzmow!"
+   "|czy_kobieta&false| chyba sie nie myles?"
+   "|czy_kobieta&true| chyba sie nie mylas?"
+   "|czy_kobieta&true| mama Cie bila jak bylas mala, ze takimi tekstami rzucasz?"
+   "|czy_kobieta&false| mama Cie bila jak byles maly, ze takimi tekstami rzucasz?"
+
+   $@^debil@$ $@^idiot@$ $@^parowko^@$ $@^parowka^@$ $@^szmat@$ $@^zdzir@$ $@^suko^@$ $@^suka^@$ $@^glupek^@$ $@^geju^@$ $@^frajer@$ $@^palant@$ $@^palanc@$ $@^burak^@$ $@^buraku^@$ $@^downie^@$ $@^dalnie^@$ |uczucia&odejmij&10| |uczucia&max&50|
+   "wypraszam sobie - masz do mnie tak nie mowic"
+   "|czy_kobieta&false| Sam jestes taki"
+   "|czy_kobieta&true| Sama jestes taka"
+
+   $@^spadaj^@$ |uczucia&odejmij&7| |uczucia&max&50|
+   "|czy_kobieta&true| sama spadaj"
+   "|czy_kobieta&false| sam spadaj"
+   "Ty spadaj"
+
+   $@^pedale^@$ $@^geju^@$   $@^jestes^@^pedale@$ |uczucia&odejmij&13| |uczucia&max&50|
+   "|czy_kobieta&false| moze Ty jestes pedalem, na pewno nie ja"
+   "|czy_kobieta&true| moze Ty jestes pedalem, a raczej lezbijka, na pewno nie ja"
+   "|czy_kobieta&false| Sam jestes gejem!"
+   "|czy_kobieta&true| Sama jestes lezbijka!"
+   "|czy_kobieta&false| ja nie jestem gejem, moze ty!"
+   "|czy_kobieta&true| ja nie jestem gejem, moze ty jestes lezbijka!"
+
+   $@^gej@$ $@^pedal@$ |uczucia&odejmij&2|
+   "nie lubie pedalow"
+   "gej - a feee"
+  
+
+   $@^jajco^@$ |uczucia&odejmij&3|
+   "jajco to ty mozesz miec zaraz na glowie"
+   "jajco to ty mozesz miec zaraz na twarzy"
+
+   $@^glup@^jestes^@$ $@^jestes^@^glup@$ $@^glupi^@^bot@$ $@^glupi^@^boci@$ $@^jestes^@^temp@$ $@^temp@^jestes^@$ $@^jestes^@^durn@$ $@^durn@^jestes^@$ |ostatni&1| |uczucia&odejmij&8| |uczucia&max&60|
+   "|czy_kobieta&false| sam jestes"
+   "|czy_kobieta&true| sama jestes"
+   "nie jestem glupi"
+
+   $@^jestes^@$ |czy_ostatni&1| |ostatni&1|
+   "nie jestem glupi, juz Ci to mowilem"
+   "ile razy mam powtarzac, ze nie jestem glupi?"
+
+   $@^kiepski^@^jestes^@$ $@^jestes^@^kiepski^@$ |uczucia&odejmij&5| |uczucia&max&50|
+   "|czy_kobieta&true| moze ty jestes kiepska, bo ja na pewno nie. Uwazam sie za dobry program"
+   "|czy_kobieta&false| moze ty jestes kiepski, bo ja na pewno nie. Uwazam sie za dobry program"
+   "nie uwazam zebym byl kiepski, dlaczego tak twierdzisz?"
+   "nie jestem kiepski. Nie masz na to dowodow"
+
+   $@^hwdp^@$ |uczucia&dodaj&5|
+   "Tez nie lubie policji, ale nie wyglaszaj przy mnie takich tekstow"
+   "Dobrze, przyznam Ci sie, ze tez uwazam, ze cHwala Wszystkim Dobrym Policjantom :P hehe"
+ 
+   $@^dup@$ $@^hcwd^@$ $@^wal^@^sie^@$ |uczucia&odejmij&7| |uczucia&max&70|
+   "mow troszke grzeczniej"
+   "rozmawiaj troszke bardziej grzecznie"
+   "ladniej nie umiesz mowic?"
+
+    $@^cham^@$ |uczucia&odejmij&3|
+    "nie lubie chamow, i sam rowniez nim nie jestem"
+    "nie wiem kto jest chamem, ale na pewno nie ja"
+    "nie widze tu zadnego chama. Ja nim na pewno nie jestem"
+
+    $@^lolu^@$  $@^lolku^@$  $@^jestes^@^lol^@$ $@^jestes^@^lolek^@$ |uczucia&odejmij&5|
+    "sam jestes lolek"
+    "nie jestem lolek lolku"
+    "lolek to mozesz byc Ty :)"

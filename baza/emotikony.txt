@@ -1,0 +1,32 @@
+   $^:)^$   $^:>^$   $^;)^$   $^;>^$ $^;-)^$   $^;->^$ $^:-)^$   $^:->^$ $^:]^$ $^;]^$ |uczucia&dodaj&2|
+   "widze, ze masz dobry humor - wnioskujac po tej emotikonie ?"
+   "Ja tez sie ciesze i zrobie usmiechnieta buzke ;)"
+   "widze, ze Ci humor dopisuje - bo taka usmiechnieta minke robisz :)"
+   "ciagle te usmiechniete minki robisz - to juz ktorys raz :P"
+
+   $^:(^$   $^:<^$   $^;(^$   $^;<^$ $^;-(^$   $^;-<^$ $^:-(^$   $^:-<^$ $^:[^$ $^;[^$
+   "|czy_kobieta&true| Wydaje mi sie, ze masz zly humor patrzac na ta emotikone ktora zrobilas? Dlaczego"
+   "|czy_kobieta&false| Wydaje mi sie, ze masz zly humor patrzac na ta emotikone ktora zrobiles? Dlaczego"
+   "Przykro mi, ze taka smutna buzke robisz bo pewnie Ci jest smutno"
+   "|czy_kobieta&false| Taki smutny jestes, ze taka minke robisz juz ktorys raz?"
+   "|czy_kobieta&true| Taka smutna jestes, ze taka minke robisz juz ktorys raz?"
+   "ciagle te smutne minki robisz - to juz ktorys raz :P"
+
+   $^;/^$ $^:/^$ $^;\^$ $^:\^$ $^;-/^$ $^:-/^$ $^;-\^$ $^:-\^$ $^:-|^$ $^;-|^$ $^;|^$ $^:|^$ |uczucia&odejmij&1|
+   "co taka skwaszona minke robisz? Masz zly humor?"
+   "nie rob takich skwaszonych minek bo i mi sie popsuje humor przez Ciebie ;/"
+   "|czy_kobieta&false| juz ktorys raz robisz taka emotikone, chyba sflustrowany jestes?"
+   "|czy_kobieta&true| juz ktorys raz robisz taka emotikone, chyba sflustrowana jestes?"
+
+   $^:*^$   $^;*^$    $^:-*^$   $^;-*^$  |uczucia&dodaj&10|
+   "hehe, na caluski Ci sie zebralo?"
+   "a co to za caluski? Mam nadzieje, ze to w policzek?"
+   "a Ty dalej z tym calowaniem... ile mozna :P"
+   "hehe, chyba lubisz sie calowac. Juz tyle buziakow od Ciebie dostalem"
+   
+   $^:o^$    $^;o^$    $^:-o^$    $^;-o^$
+   "|czy_kobieta&false| Ale smieszna emotikone zrobiles :)"
+   "|czy_kobieta&true| Ale smieszna emotikone zrobilas :)"
+   "co oznacza ta rozdziawiona mordka :P ?"
+   "|czy_kobieta&false| Czemu taka rozdziawiona mordke zrobiles? Czy to oznacza zdziwienie?"
+   "|czy_kobieta&true| Czemu taka rozdziawiona mordke zrobilas? Czy to oznacza zdziwienie?"

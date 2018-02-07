@@ -1,0 +1,38 @@
+   $@^zagrac^@$ $@^gre^@$ $@^zagra@$ |ostatni&gra|
+   "|czy_kobieta&false| Chcesz zagrac w gre (bedziesz zgadywal liczbe ktora wylosuje)?"
+   "|czy_kobieta&true| Chcesz zagrac w gre (bedziesz zgadywala liczbe ktora wylosuje)?"
+   "|czy_kobieta&false| Chcialbys zagrac w gre w ktorej bedziesz probowal odkryc liczbe ktora wylosuje?"
+   "|czy_kobieta&true| Chcialabys zagrac w gre w ktorej bedziesz probowala odkryc liczbe ktora wylosuje?"
+
+   $@^nie^@^chce^@$ |czy_ostatni&gra|
+   "wiec nie bedziemy grali |temat|"
+
+
+   $@^tak^@$ $@^owszem^@$ $^moge^$ $@^moge^@^zagrac^@$ $@^ta^@$ $@^chetnie^@$ $@^ok^@$ $@^jasne^@$ $@^pewnie^@$ $@^oki^@$ $^no^@$ $@^dawaj^@$ $^nom^@$ $@^dobra^@$ $@^dobrze^@$ $@^chce^@$ $@^chcialbym^@$ $@^chcialabym^@$     |czy_ostatni&gra| |temat&gra|
+   "ok wylosowalem liczbe z przedzialu 1-30. zgaduj. Bede Ci podpowiadac |gra&wylosuj|"
+   "Zatem wylosowalem liczbe z zakresu 1-30, sprobuj ja zgadnac, bede Ci podpowiadal. zaczynaj |gra&wylosuj|"
+
+   $@^koniec^@$ $@^nie^@^chce^@$ |czy_temat&gra|
+   "Jesli nie chcesz juz grac to nie |temat|"
+   "Jesli juz nie chcesz grac to nie gramy |temat|"
+   "A wiec koniec gry |temat|"
+
+   $@^jeszcze^@^raz^@$ |czy_ostatni&czy_jeszcze_raz| |temat&gra|
+   "ok wylosowalem liczbe z przedzialu 1-30. zgaduj. Bede Ci podpowiadac |gra&wylosuj|"
+   "Zatem wylosowalem liczbe z zakresu 1-30, sprobuj ja zgadnac, bede Ci podpowiadal. zaczynaj |gra&wylosuj|"
+
+
+   $@@@$ |czy_temat&gra|
+   "|gra&sprawdz&wiecej| |gra&podaj| to za malo. Podaj wieksza liczbe"
+   "|gra&sprawdz&wiecej| |gra&podaj| to za mala liczba. Wylosowalem wieksza"
+   "|gra&sprawdz&wiecej| |gra&podaj| ? Niestety za malo. Podaj wieksza liczbe"
+   "|gra&sprawdz&mniej| |gra&podaj| ? za duzo, wylosowalem mniejsza liczbe"
+   "|gra&sprawdz&mniej| |gra&podaj| to niestety za duzo"
+   "|gra&sprawdz&mniej| |gra&podaj| jest za duza liczba. Podaj mniejsza"
+   "|gra&sprawdz&dobrze| |czy_kobieta&false| Trafiles. Gratulacje. Udalo Ci sie za |gra&ktory_raz| razem |temat| |ostatni&czy_jeszcze_raz|"
+   "|gra&sprawdz&dobrze| |czy_kobieta&true| Trafilas. Gratulacje. Udalo Ci sie za |gra&ktory_raz| razem |temat| |ostatni&czy_jeszcze_raz|"
+   "|gra&sprawdz&dobrze| |czy_kobieta&false| Dobrze! Zgadles. Udalo Ci sie za |gra&ktory_raz| razem |temat| |ostatni&czy_jeszcze_raz|"
+   "|gra&sprawdz&dobrze| |czy_kobieta&true| Dobrze! Zgadlas. Udalo Ci sie za |gra&ktory_raz| razem |temat| |ostatni&czy_jeszcze_raz|"
+   "|gra&sprawdz&zle| |czy_kobieta&false| podales zla liczbe"
+   "|gra&sprawdz&zle| |czy_kobieta&true| podalas zla liczbe"
+   "|gra&sprawdz&zle| To nie jest wlasciwa liczba"

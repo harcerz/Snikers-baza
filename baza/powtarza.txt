@@ -1,0 +1,15 @@
+   $@@@$ |czy_powtorzyl&2|
+   "powtarzasz sie"
+   "|czy_kobieta&true| drugi raz to samo powiedzialas"
+   "|czy_kobieta&false| drugi raz to samo powiedziales"
+   "|czy_kobieta&false| drugi raz pod rzad powiedziales to samo! Powtarzasz sie"
+   "|czy_kobieta&true| drugi raz pod rzad powiedzialas to samo! Powtarzasz sie"
+
+   $@@@$ |czy_powtorzyl&3|
+   "Jesli powtorzysz jeszcze raz to samo, to przestane z Toba rozmawiac. Pilnuj sie!"
+   "|czy_kobieta&true| 2 razy pod rzad powiedzialas ten sam tekst, jesli jeszcze raz powtorzysz to samo to przestane z Toba rozmawiac"
+   "|czy_kobieta&false| 2 razy pod rzad powiedziales ten sam tekst, jesli jeszcze raz powtorzysz to samo to przestane z Toba rozmawiac"
+
+   $@@@$ |czy_powtorzyl&4|
+   "|czy_kobieta&true| Koniec rozmowy. Poniewaz jestes flooderka nie rozmawiam z Toba dalej |koniec_rozmowy|"
+   "|czy_kobieta&false| Koniec rozmowy. Poniewaz jestes flooderem nie rozmawiam z Toba dalej |koniec_rozmowy|"
