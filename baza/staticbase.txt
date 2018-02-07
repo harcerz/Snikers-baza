@@ -49,4 +49,4 @@
 
   $no i co z tego?$
 
-  $zycie programu jest takie nieciekawe :( szkoda, ze nie jestem czlowiekiem$
+  $zycie programisty jest takie nudne :( szkoda, ze nie jestem podroznikiem$

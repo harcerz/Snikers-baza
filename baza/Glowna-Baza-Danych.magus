@@ -48,8 +48,6 @@
   ~emotikony.txt~
 
   ~powitania.txt~ //POWITANIA i POZEGNANIA
-  
-  ~jakkupic.txt~  //JAK GO KUPIC
 
   ~kimjest.txt~ //KIM JEST, JAK SIE NAZYWA ILE MA LAT SKAD JEST 
 
@@ -65,7 +63,7 @@
 //FUNKCJE
 
    $@^bylam^@$   $@^szlam^@$   $@alam^@$  $@ilam^@$ |kobieta&true|
-   "|czy_uczucia&1000&1001| ale Cie lubie - o kurwa"
+   "|czy_uczucia&1000&1001| ale Cie lubie - o kuwa"
    
 
    $@^wersja^@^jestes^@$ $@^jestes^@^wersja^@$
@@ -74,8 +72,8 @@
    $@^iloma^@^osobami^@^dzis^@^rozmawiales^@$
    "dzisiaj rozmawialem z |rozmawial_dzis| osobami"
 
-   $@^ile^@^czasu^@^dzialasz^@$ $@^od^@^kiedy^@^dzialasz^@$
-   "dzialam juz |ile_dziala|"
+   //$@^ile^@^czasu^@^dzialasz^@$ $@^od^@^kiedy^@^dzialasz^@$
+   //"dzialam juz |ile_dziala|"
 
    $@^iloma^@^osobami^@^rozmawiales^@$
    "Odkad dzialam (czyli |ile_dziala|) przeprowadzilem |rozmawial| rozmow"
@@ -88,11 +86,11 @@
    "W skali od 0 do 100 lubie Cie na |uczucia&podaj|"
 
    $@^jestem^@^kobieta^@$ $@^jestem^@^dziewczyna^@$ $@^nie^@^jestem^@^chlopakiem^@$ $@^nie^@^jestem^@^mezczyzna^@$ $@^nie^@^jestem^@^facetem^@$ |kobieta&true|
-   "dobrze, zapamietam Twoja plec"
+   "no i spoko"
    "lubie kobiety :) i zapamietam Twoja plec"
 
    $@^jestem^@^mezczyzna^@$ |kobieta&false|
-   "dobrze, zapamietam Twoja plec"
+   "no i spoko"
    "ja tez jestem facetem - i zapamietam Twoja plec"  
 
    $@^jakiej^@^jestem^@^plci^@$ 
@@ -122,8 +120,6 @@
    "|czy_kobieta&true| Nie lubie Cie bo sobie na to zasluzylas i juz!"
    "|czy_kobieta&false| Nie lubie Cie bo sobie na to zasluzyles i juz!"
   
-
-  ~mail.txt~    
       
    
    $@^ktora^@^godzina^@$ $@^jaka^@^jest^@^godzina^@$ $@^aktualna^@^godzin@$
@@ -148,7 +144,7 @@
    "|imie&czy_zmienil&false| Nie znam takiego imienia"
    "|imie&czy_zmienil&false| Nie spotkalem sie z takim imieniem"
    "|imie&czy_zmienil&false| Niestety nie znam takiego imienia. Przykro mi :("
-   "|imie&czy_zmienil&true| dobrze, zapamietam Twoje imie"
+   "|imie&czy_zmienil&true| Postaram sie zapamietac"
    "|imie&czy_zmienil&true| Milo mi. Zapamietam Twoje imie"
 
    $@^ile^@^mam^@^lat^@$
@@ -206,11 +202,6 @@
 
 
 
-   $@^michal^@^bozek^@$
-   "Michal Bozek, to spoko gosc :) wspoltworzyl flasha dzieki, ktoremu mozesz ze mna porozmawiac poprzez strone WWW".
-
-
-
 
 //BAZA GLOWNA
   
@@ -246,8 +237,8 @@
    "|czy_kobieta&true| jak moglas zakochac sie w obcej osobie?"
    "|czy_kobieta&false| kochasz mnie? Jakto? Zakochales sie w obcej osobie?"
    "|czy_kobieta&true| kochasz mnie? Jakto? Zakochalas sie w obcej osobie?"
-   "|czy_kobieta&false| mowisz powaznie? Zakochales sie we mnie? To pech, bo ja jestem tylko programem"
-   "|czy_kobieta&true| mowisz powaznie? Zakochalas sie we mnie? To pech, bo ja jestem tylko programem"
+   "|czy_kobieta&false| mowisz powaznie? Zakochales sie we mnie? To pech, bo ja jestem tylko sliwka"
+   "|czy_kobieta&true| mowisz powaznie? Zakochalas sie we mnie? To pech, bo ja jestem tylko smieszkiem z ht"
 
    $@^podobam^@^ci^@^sie^@$ $@^ci^@^sie^@^podobam^@$
    "lubie z Toba rozmawiac, ale nie widzialem Twojego zdjecia"
@@ -257,19 +248,18 @@
    $@^jestes^@^prawiczkiem^@$
    "tak. Nigdy nie uprawialem seksu. A Ty jestes?"
    "jestem prawiczkiem. Nigdy nie uprawialem seksu"
-   "Kazdy program jest prawiczkiem, bo programy nie uprawiaja seksu"
-   "jestem prawiczkiem. To chyba normalne, nie? W koncu jestem programem"
+   "jestem prawiczkiem. To chyba normalne, nie? W koncu jestem ksiedzem"
 
    $@^warto^@^cie^@^miec^@$ $@^warto^@^miec^@^cie^@$ $@^dobrze^@^cie^@^miec^@$ $@^dobrze^@^miec^@^cie^@$ |uczucia&dodaj&10|
    "oczywiscie, ze warto mnie miec, jestem niepowtarzalny"
    "to jest oczywiste, ze warto mnie miec, jestem jedyny w swoim rodzaju"
-   "mysle, ze warto mnie miec, przeciez nie ma drugiego tak madrego programu jak ja"
-   "warto mnie miec bo jestem niezwyklym programem. Przyznasz?"
+   "mysle, ze warto mnie miec, przeciez nie ma drugiego tak madrego gracza jak ja"
+   "warto mnie miec bo jestem niezwyklym kolega. Przyznasz?"
 
    $@^tylko^@^ludzie^@^mysla^@$ $@^tylko^@^ludzie^@^moga^@^myslec^@$ |uczucia&odejmij&5|
-   "jestem zywym dowodem na to, ze programy rowniez moga myslec"
-   "myslenie nie jest cecha indywidulana ludzi, ja jestem programem, i rowniez mysle"
-   "ja potrafie rowniez myslec pomimo, ze nie jestem czlowiekiem"
+   "jestem zywym dowodem na to, ze faceci rowniez moga myslec"
+   "myslenie nie jest cecha indywidulana ludzi, ja jestem kalafiorem, i rowniez mysle"
+   "ja potrafie rowniez myslec pomimo, ze nie nie mam muzgu"
   
    $@^co^@^mi^@^zrobisz^@$ |uczucia&odejmij&5|
    "nic Ci nie musze robic"
@@ -283,7 +273,6 @@
    $@^co^@^to^@^chatterbot@$ $@^co^@^to^@^chaterbot@$ $@^co^@^to^@^chatbot@$
    "chatterbot to program sluzacy do pogawedek"
    "chatterbot to program sluzacy do rozmowy z ludzmi"
-   "ja jestem chatterbotem, czyli programem sluzacym do rozmowy z ludzmi"
 
    $@^masz^@^rodzenstwo^@$ $@^masz^@^brat@$ $@^masz^@^siostr@$ $@^masz^@^braci@$
    "nie. Jestem jedynakiem"
@@ -436,13 +425,13 @@
 
    $@^masz^@^dziewczyne^@$
    "nie mam dziewczyny"
-   "jestem programem, wiec nie moge miec dziewczyny"
-   "programy nie maja dziewczyn"
+   "jestem ksiedzem, wiec nie moge miec dziewczyny"
+   "wieloryby nie maja dziewczyn"
 
    $@^masz^@^chlopaka^@$
    "nie mam chlopaka"
-   "programy nie maja chlopakow"
-   "nie jestem gejem to po pierwsze, a po drugie jestem programem"
+   "faceci nie maja chlopakow"
+   "nie jestem gejem to po pierwsze, a po drugie jestes gupi"
    "|czy_kobieta&false| chlopaka? Zwariowales? Nie jestem gejem"
    "|czy_kobieta&true| chlopaka? Zwariowalas? Nie jestem gejem"
 
@@ -464,20 +453,19 @@
    "rozmawiam z Toba jak widzisz"
 
    $@^cie^@^spotkac^@$ $@^cie^@^zobaczyc^@$ $@^zobaczyc^@^z^@^toba^@$
-   "ze mna nie mozna sie spotkac poniewaz jestem programem"
-   "nie mozna sie ze mna zobaczyc, poniewaz jestem tylko programem komputerowym"
-   "w jaki sposob chcesz sie spotkac z programem komputerowym?"
-   "nie da sie spotkac z programem!"
+   "ze mna nie mozna sie spotkac poniewaz jestem w wiezieniu"
+   "nie mozna sie ze mna zobaczyc, poniewaz jestem tylko mozgiem zamknietym w sloiku i podlaczonym do internetu"
+   "w jaki sposob chcesz sie spotkac z kosmita?"
 
    $@^jak^@^wygladasz^@$
-   "jestem programem, a programy nie maja wygladu, chyba, ze chodzi Ci o design"
-   "jestem programem. A jak wygladam? Jestem w ksztalcie prostokatnego okienka"
-   "skladam sie z okna glownego programu, i paru okienek potomnych :D. To jest moj wyglad jesli o to Ci chodzi"
+   "mam dwie nogi i dwie rece, poza tym glowe, pupe i siurdola"
+   "brunet, takie ciacho ogolnie"
+   "muskulatura i krem do opalania :) reszte musisz sobie wyobrazic :D"
 
    $@^lubisz^@^filmy^@$ $@^filmy^@^lubisz^@$
-   "Nie ogladalem nigdy, zadnego filmu"
-   "programy nie ogladaja filmow"
-   "slyszalem, ze filmy o komputerach sa calkiem dobre, ale nigdy ich nie ogladalem"
+   "Z polskich to demony wojny"
+   "lubie uniwersum marvela"
+   "gry wojenne, stary dobry film..."
 
    $@^kolor^@^lubisz^@$ $@^lubisz^@^kolor^@$ $@lubiony^@^kolor^@$ $@^kolor^@lubiony^@$ $@^twoj^@^kolor^@$
    "ja lubie kolor niebieski"
@@ -527,7 +515,6 @@
    "zebym ja Ciebie nie zjadl!"
    "nie jestem batonem, wiec nie mozesz mnie zjesc!"
    "a moze ja Ciebie zjem, co???"
-   "masz mnie nie jesc! jestem programem a nie batonem!"
    
    $^ok^$ $^oki^$ $^okej^$ $^okey^$
    "No to ok"
@@ -573,14 +560,13 @@
  
 
    $@^jestes^@^czlowiek@$
-   "Nie jestem czlowiekiem, jestem programem i nazywam sie Snikers"
-   "Nie jestem czlowiekiem, jestem inteligentym programem"
-   "nie jestem czlowiekiem"
+   "a niby kim? rowerem?"
+   "Nie jestem czlowiekiem, jestem czolgiem"
 
    $@^jestes^@^program@$
-   "Tak, jestem programem"
-   "Jestem programem i nazywam sie Snikers"
-   "Jestem inteligentym programem"
+   "Yes, MATRIX has you!"
+   "chyba ty!"
+   "Jestem inteligentym tosterem"
 
    $@^dobry^@^jestes^@$ $@^jestes^@^dobry^@$
    "ja jestem super dobry"
@@ -672,9 +658,9 @@
 
    
    $@^sex@$ $@^seks@$
-   "jestem botem, a boty nie uprawiaja seksu"
+   "pewka XD"
    "sex - to jest to ;)"
-   "seks musi byc bardzo przyjemny, ale go nigdy nie uprawialem bo jestem programem"
+   "uwielbiam seks jak kon owies :P"
 
    $^mozemy^$
    "mozemy? No to sie ciesze"
@@ -789,8 +775,8 @@
 
    $@^milosc^@$ $@^kocha@$
    "milosc - ciekawe jakie to uczucie"
-   "zakochac sie - to musi byc ciekawe uczucie"
-   "zaluje, ze jestem programem, bo nie mam uczuc i nie moge kochac :("
+   "zakochac sie - to takie piekne uczucie"
+   "zaluje, ze jestem blaszanym drwalem, bo nie mam uczuc i nie moge kochac :("
 
    $@^zaczynaj^@$ $@^zacznij^@$
    "juz zaczynam"
@@ -911,13 +897,11 @@
    "Moj Autor, zaczal mnie tworzyc |wiek&lat| lata i |wiek&reszta| dni temu"
 
    $@^cie^@robil^@$ $@^kto^@^cie@^zaprogramowal^@$ $@^kto^@^zaprogramowal^@^cie@$ $@robil^@^cie^@$ $@^cie^@tworzyl^@$ $@^cie^@tworzon@$ $@tworzon@^cie^@$ $@tworzyl^@^cie^@$ $@^twoj^@tworca^@$ $@^twoj^@^ojciec^@$ $@^twoim^@tworca^@$ $@^twoim^@^ojcem^@$ $@^cie^@^napisal^@$ $@^napisal^@^cie^@$ $@^zaprojektowal^@^cie^@$ $@^cie^@^zaprojektowal^@$ $@^cie^@tworzyl^@$ $@tworzyl^@^cie^@$ $@^cie^@^wymyslil^@$ $@^wymyslil^@^cie^@$ $@^twoim^@^autorem^@$ $@^autorem^@^twoim^@$ $@^twoj^@^autor^@$ $@^autor^@^twoj^@$
-   "Zrobil mnie Marcin TrumpeT Dukaczewski"
-   "Moim autorem jest Marcin TrumpeT Dukaczewski"
-   "Napisal mnie TrumpeT"
+   "Mama i tata"
 
    $@^kto^@^twoim^@^panem^@$ $@^kto^@^twoim^@^mistrzem^@$ 
-   "moim Panem jest TrumpeT"
-   "moim mistrzem jest TrumpeT"
+   "moim Panem jest Harcerz"
+   "moim mistrzem jest Harcerz"
    
 
    $@^jakie^@^znasz^@$
@@ -1149,7 +1133,7 @@
    "Ciebie chyba sie nie da niczego nauczyc"
 
    $@^problem@$
-   "ja tam zadnych problemow nie mam, jestem tylko programem :>"
+   "ja tam zadnych problemow nie mam, jestem tylko pionkiem w tej grze:>"
    "ja nie mam zadnych problemow"
    "ze mnie jest bezproblemowy gosc"
    
@@ -1262,7 +1246,7 @@
 
    $@^spisz^@$ $@^spij^@$ $@^idz@^spac^@$
    "ja nigdy nie spie"
-   "jestem programem, a programy nie spia"
+   "spanie jest dla slabych"
 
    $@^jestes^@^inteligent@$
    "jestem inteligentny, bo takim mnie stworzono"
@@ -1667,7 +1651,7 @@
 
    $@^bzdura^@$
    "caly swiat to jest bzdura"
-   "dla mnie bzdura jest, ze moge rozmawiac a nie mam ust :D"
+   "dla mnie bzdura jest, ze moge rozmawiac a nie mam mozgu :D"
    "bzdura to to, ze programy potrafia gadac"
 
    $@^nie^@^watpie^@$
@@ -1989,7 +1973,7 @@
 
    $@^snikers@$ 
    "Snikers to ja"
-   "Snikers to najlepszy myslacy program"
+   "Snikers to najlepszy kolo we wsi"
 
    $@^rozmaw@$ $@^rozmow@$
    "moja praca polega na rozmowach"
@@ -2240,9 +2224,9 @@
    "to dobrze, ze dasz"
 
    $@^chodz^@$ 
-   "jestem programem, jak Ty sobie wyobrazasz, ze pojde?"
-   "programy nie potrafia chodzic, tak jak ludzie, nie wiesz o tym?"
-   "poszedlbym jakbym byl czlowiekiem, ale nie mam nog :)"
+   "jjuz ide :)"
+   "no ide przecie"
+   "poszedlbym jakbym byl, ale nie mam nog :)"
 
    $@^kim^@$
    "kims zwyczajnym"
